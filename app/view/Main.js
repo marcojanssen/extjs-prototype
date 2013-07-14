@@ -2,7 +2,8 @@ Ext.define('Prototype.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
-        'Ext.layout.container.Border'
+        'Ext.layout.container.Border',
+        'Prototype.view.core.Menu'
     ],
     
     xtype: 'app-main',
@@ -13,15 +14,8 @@ Ext.define('Prototype.view.Main', {
 
     items: [{
         region: 'north',
-        xtype: 'container',
-        title: 'blaat',
-        height: 50
-    },{
-        region: 'west',
-        xtype: 'panel',
-        title: 'west',
-        width: 150
-    },{
+        xtype: 'view.core.Menu'
+    }, {
         region: 'center',
         xtype: 'tabpanel',
         items:[{
