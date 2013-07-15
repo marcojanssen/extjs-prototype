@@ -10,6 +10,7 @@ Ext.Loader.addClassPathMappings({
   "ExtThemeNeptune": "../../ext/packages/ext-theme-neptune/overrides",
   "Ext": "../../ext/src",
   "Prototype.Application": "../../app/application.js",
+  "Ext.ux.Router": "../../packages/router/src/Router.js",
   "Ext.rtl.EventObjectImpl": "../../ext/src/rtl/EventObject.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
@@ -64,6 +65,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.event.Recorder": [],
   "Ext.ux.RowExpander": [],
   "Ext.ux.event.Player": [],
+  "Ext.ux.Router": [
+    "Ext.Router"
+  ],
   "ExtThemeNeptune.panel.Tool": [],
   "Prototype.view.Viewport": [],
   "Ext.ux.ajax.SimManager": [],
@@ -78,6 +82,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.form.SearchField": [],
   "Ext.ux.dd.CellFieldDropZone": [],
   "Ext.ux.LiveSearchGridPanel": [],
+  "Prototype.view.core.Menu": [],
   "Ext.ux.grid.filter.DateFilter": [],
   "Ext.ux.DataTip": [],
   "Ext.ux.grid.filter.DateTimeFilter": [],
@@ -175,6 +180,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.event.Recorder": [],
   "Ext.ux.RowExpander": [],
   "Ext.ux.event.Player": [],
+  "Ext.ux.Router": [],
   "ExtThemeNeptune.panel.Tool": [],
   "Prototype.view.Viewport": [],
   "Ext.ux.ajax.SimManager": [],
@@ -199,6 +205,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.dd.CellFieldDropZone": [],
   "Ext.ux.LiveSearchGridPanel": [],
+  "Prototype.view.core.Menu": [
+    "widget.view.core.Menu"
+  ],
   "Ext.ux.grid.filter.DateFilter": [
     "gridfilter.date"
   ],

@@ -1,4 +1,4 @@
-$image-search-path: 'C:/dev/extjs-prototype/build/Prototype/production/resources';
+$image-search-path: 'C:/simdev/extjs-prototype/build/Prototype/production/resources';
 $theme-name:  'ext-theme-neptune' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -449,7 +449,7 @@ $include-ext-util-filter: true;
 $include-ext-util-floating: true;
 $include-ext-util-grouper: true;
 $include-ext-util-hashmap: true;
-$include-ext-util-history: false;
+$include-ext-util-history: true;
 $include-ext-util-inflector: true;
 $include-ext-util-keymap: true;
 $include-ext-util-keynav: true;
@@ -484,6 +484,7 @@ $include-ext-ux-iframe: false;
 $include-ext-ux-livesearchgridpanel: false;
 $include-ext-ux-previewplugin: false;
 $include-ext-ux-progressbarpager: false;
+$include-ext-ux-router: true;
 $include-ext-ux-rowexpander: false;
 $include-ext-ux-slidingpager: false;
 $include-ext-ux-spotlight: false;
@@ -555,6 +556,7 @@ $include-prototype-app-application: true;
 $include-prototype-controller-main: false;
 $include-prototype-view-main: true;
 $include-prototype-view-viewport: true;
+$include-prototype-view-core-menu: true;
 /* including package ext-theme-base */
 @import '../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */

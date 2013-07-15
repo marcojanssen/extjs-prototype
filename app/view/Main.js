@@ -2,6 +2,7 @@ Ext.define('Prototype.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
+        'Ext.ux.Router',
         'Ext.layout.container.Border',
         'Prototype.view.core.Menu'
     ],
