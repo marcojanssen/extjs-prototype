@@ -1,4 +1,4 @@
-$image-search-path: 'C:/simdev/extjs-prototype/build/Prototype/production/resources';
+$image-search-path: 'C:/dev/extjs-prototype/build/Prototype/production/resources';
 $theme-name:  'ext-theme-neptune' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -553,10 +553,14 @@ $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
 $include-prototype-application: true;
 $include-prototype-app-application: true;
-$include-prototype-controller-main: true;
-$include-prototype-view-main: true;
+$include-prototype-controller-home: true;
+$include-prototype-controller-mainmenu: true;
+$include-prototype-controller-settings: true;
+$include-prototype-store-home: true;
+$include-prototype-view-mainmenu: true;
 $include-prototype-view-viewport: true;
-$include-prototype-view-core-menu: true;
+$include-prototype-view-home-index: true;
+$include-prototype-view-settings-index: true;
 /* including package ext-theme-base */
 @import '../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
