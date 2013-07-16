@@ -31,7 +31,33 @@ Ext.define('Prototype.view.home.Index', {
         columns: [
             { text: 'Name',  dataIndex: 'name' },
             { text: 'Email', dataIndex: 'email', flex: 1 },
-            { text: 'Phone', dataIndex: 'phone' }
+            { text: 'Phone', dataIndex: 'phone' },
+            {
+                xtype:'actioncolumn',
+                width: 100,
+                items: [{
+                    icon: 'resources/img/glyphicons/glyphicons_030_pencil.png',
+                    tooltip: 'Edit',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = grid.getStore().getAt(rowIndex);
+                        alert("Edit " + rec.get('name'));
+                    }
+                },{
+                    icon: 'resources/img/glyphicons/glyphicons_027_search.png',
+                    tooltip: 'Preview',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = grid.getStore().getAt(rowIndex);
+                        alert("Terminate " + rec.get('name'));
+                    }
+                },{
+                    icon: 'resources/img/glyphicons/glyphicons_016_bin.png',
+                    tooltip: 'Delete',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = grid.getStore().getAt(rowIndex);
+                        alert("Terminate " + rec.get('name'));
+                    }
+                }]
+            }
         ],
         style: {
             backgroundColor: 'none'
