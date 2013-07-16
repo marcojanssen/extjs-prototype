@@ -16,12 +16,12 @@ Ext.Loader.addClassPathMappings({
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.BoxReorderer": [],
   "ExtThemeNeptune.menu.Menu": [],
+  "Prototype.view.settings.Index": [],
   "ExtThemeNeptune.container.ButtonGroup": [],
   "Ext.ux.grid.filter.Filter": [],
   "Ext.ux.GroupTabRenderer": [],
   "Ext.ux.grid.TransformGrid": [],
   "Ext.ux.ajax.DataSimlet": [],
-  "Prototype.view.Main": [],
   "Ext.ux.FieldReplicator": [],
   "Ext.ux.grid.filter.ListFilter": [],
   "ExtThemeNeptune.panel.Panel": [],
@@ -45,11 +45,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.layout.Center": [],
   "Prototype.Application": [],
   "Ext.ux.PreviewPlugin": [],
-  "Prototype.controller.Main": [],
   "Ext.ux.DataView.Animated": [],
   "ExtThemeNeptune.resizer.Splitter": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [],
+  "Prototype.view.MainMenu": [],
   "Ext.ux.ProgressBarPager": [],
   "Ext.ux.CellDragDrop": [],
   "Ext.ux.statusbar.StatusBar": [
@@ -58,12 +58,15 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
+  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [],
   "ExtThemeNeptune.layout.component.Dock": [],
+  "Prototype.view.home.Index": [],
   "ExtThemeNeptune.panel.Table": [],
   "Ext.ux.grid.menu.RangeMenu": [],
   "Ext.ux.event.Recorder": [],
   "Ext.ux.RowExpander": [],
+  "Prototype.controller.Settings": [],
   "Ext.ux.event.Player": [],
   "Ext.ux.Router": [
     "Ext.Router"
@@ -81,8 +84,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.TabCloseMenu": [],
   "Ext.ux.form.SearchField": [],
   "Ext.ux.dd.CellFieldDropZone": [],
+  "Prototype.controller.Home": [],
+  "Prototype.store.Home": [],
   "Ext.ux.LiveSearchGridPanel": [],
-  "Prototype.view.core.Menu": [],
   "Ext.ux.grid.filter.DateFilter": [],
   "Ext.ux.DataTip": [],
   "Ext.ux.grid.filter.DateTimeFilter": [],
@@ -104,6 +108,7 @@ Ext.ClassManager.addNameAlternateMappings({
 Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.BoxReorderer": [],
   "ExtThemeNeptune.menu.Menu": [],
+  "Prototype.view.settings.Index": [],
   "ExtThemeNeptune.container.ButtonGroup": [],
   "Ext.ux.grid.filter.Filter": [],
   "Ext.ux.GroupTabRenderer": [
@@ -111,9 +116,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.grid.TransformGrid": [],
   "Ext.ux.ajax.DataSimlet": [],
-  "Prototype.view.Main": [
-    "widget.app-main"
-  ],
   "Ext.ux.FieldReplicator": [],
   "Ext.ux.grid.filter.ListFilter": [
     "gridfilter.list"
@@ -152,12 +154,14 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.PreviewPlugin": [
     "plugin.preview"
   ],
-  "Prototype.controller.Main": [],
   "Ext.ux.DataView.Animated": [],
   "ExtThemeNeptune.resizer.Splitter": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [
     "widget.eventrecordermanager"
+  ],
+  "Prototype.view.MainMenu": [
+    "widget.MainMenu"
   ],
   "Ext.ux.ProgressBarPager": [],
   "Ext.ux.CellDragDrop": [
@@ -171,14 +175,17 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
+  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
   ],
   "ExtThemeNeptune.layout.component.Dock": [],
+  "Prototype.view.home.Index": [],
   "ExtThemeNeptune.panel.Table": [],
   "Ext.ux.grid.menu.RangeMenu": [],
   "Ext.ux.event.Recorder": [],
   "Ext.ux.RowExpander": [],
+  "Prototype.controller.Settings": [],
   "Ext.ux.event.Player": [],
   "Ext.ux.Router": [],
   "ExtThemeNeptune.panel.Tool": [],
@@ -204,10 +211,9 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.searchfield"
   ],
   "Ext.ux.dd.CellFieldDropZone": [],
+  "Prototype.controller.Home": [],
+  "Prototype.store.Home": [],
   "Ext.ux.LiveSearchGridPanel": [],
-  "Prototype.view.core.Menu": [
-    "widget.view.core.Menu"
-  ],
   "Ext.ux.grid.filter.DateFilter": [
     "gridfilter.date"
   ],
