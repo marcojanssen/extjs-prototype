@@ -4,7 +4,9 @@ Ext.define('Prototype.Application', {
     extend: 'Ext.app.Application',
 
     views: [
-        'MainMenu'
+        'MainMenu',
+        'home.Index',
+        'settings.Index'
     ],
 
     controllers: [
@@ -66,7 +68,7 @@ Ext.define('Prototype.Application', {
                 controller  = match.controller.charAt(0).toLowerCase() + match.controller.substr(1);
 
                 // try to get the view by controller + action names
-                viewClass   = Ext.ClassManager.get('SinglePage.view.' + controller + '.' + action);
+                viewClass   = Ext.ClassManager.get('Prototype.view.' + controller + '.' + action);
 
                 if (viewClass) {
 
@@ -78,11 +80,6 @@ Ext.define('Prototype.Application', {
                     // clear target and add new view
                     target.removeAll();
                     target.add(view);
-
-                    // adjust top toolbar
-                    if (navToolbar.child('#' + controller)) {
-                        navToolbar.child('#' + controller).toggle(true);
-                    }
                 }
             }
         });
