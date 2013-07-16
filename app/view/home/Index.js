@@ -1,5 +1,5 @@
 Ext.define('Prototype.view.home.Index', {
-    extend: 'Ext.panel.Panel',
+    extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
         'Ext.layout.container.Border',
