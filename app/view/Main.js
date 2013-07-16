@@ -3,8 +3,7 @@ Ext.define('Prototype.view.Main', {
     requires:[
         'Ext.tab.Panel',
         'Ext.ux.Router',
-        'Ext.layout.container.Border',
-        'Prototype.view.core.Menu'
+        'Ext.layout.container.Border'
     ],
     
     xtype: 'app-main',
@@ -15,12 +14,10 @@ Ext.define('Prototype.view.Main', {
 
     items: [{
         region: 'north',
-        xtype: 'view.core.Menu'
+        xtype: 'MainMenu'
     }, {
         region: 'center',
-        xtype: 'tabpanel',
-        items:[{
-            title: 'Center Tab 1'
-        }]
+        xtype: 'container',
+        itemId: 'viewport-target'
     }]
 });

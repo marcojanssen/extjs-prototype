@@ -5,6 +5,8 @@ Ext.define('Prototype.view.Viewport', {
         'Prototype.view.Main'
     ],
 
+    id: 'viewport',
+
     layout: {
         type: 'fit'
     },

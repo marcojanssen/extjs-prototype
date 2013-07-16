@@ -1,33 +1,36 @@
-Ext.define('Prototype.view.core.Menu', {
+Ext.define('Prototype.view.MainMenu', {
     extend: 'Ext.container.Container',
 
-    xtype: 'view.core.Menu',
+    xtype: 'MainMenu',
     height: 50,
 
     layout: {
         type: 'hbox',
         align: 'stretchmax'
     },
+
     bodyBorder: false,
     border: false,
 
     items: [{
         xtype: 'menu',
+        id: "mainMenuLeft",
         layout: {
             type: 'hbox'
         },
         floating: false,
         flex: 2,
         items: [{
-            text: 'main 1',
-            iconCls: 'add16'
+            text: 'home',
+            itemId: 'home'
         },
         {
-            text: 'main 2',
-            iconCls: 'add16'
+            text: 'beheer',
+            itemId: 'settings'
         }]
     },{
         xtype: 'menu',
+        itemId: "mainMenuRight",
         layout: {
             type: 'hbox',
             pack : 'end'
