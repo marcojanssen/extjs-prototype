@@ -2,7 +2,7 @@ Ext.define('Prototype.view.MainMenu', {
     extend: 'Ext.container.Container',
 
     xtype: 'MainMenu',
-    height: 50,
+    height: 23,
 
     layout: {
         type: 'hbox',

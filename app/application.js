@@ -3,6 +3,11 @@ Ext.define('Prototype.Application', {
 
     extend: 'Ext.app.Application',
 
+    requires: [
+        'Ext.ux.Router',
+        'Prototype.store.Home'
+    ],
+
     views: [
         'MainMenu',
         'home.Index',

@@ -1,17 +1,23 @@
 Ext.define('Prototype.view.Viewport', {
     extend: 'Ext.container.Viewport',
+
     requires:[
-        'Ext.layout.container.Fit',
-        'Prototype.view.Main'
+        'Ext.layout.container.Border'
     ],
 
     id: 'viewport',
 
     layout: {
-        type: 'fit'
+        type: 'border'
     },
 
     items: [{
-        xtype: 'app-main'
+        region: 'north',
+        xtype: 'MainMenu'
+    }, {
+        region: 'center',
+        xtype: 'container',
+        itemId: 'viewport-target',
+        layout: 'fit'
     }]
 });
