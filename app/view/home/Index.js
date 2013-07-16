@@ -20,6 +20,7 @@ Ext.define('Prototype.view.home.Index', {
         stateful: true,
         stateId: 'home.grid.Filter',
         collapsible: true
+
     }, {
         region: 'center',
         xtype: 'grid',
@@ -31,6 +32,10 @@ Ext.define('Prototype.view.home.Index', {
             { text: 'Name',  dataIndex: 'name' },
             { text: 'Email', dataIndex: 'email', flex: 1 },
             { text: 'Phone', dataIndex: 'phone' }
-        ]
+        ],
+        style: {
+            backgroundColor: 'none'
+        },
+        margin: '0, 20, 0, 0'
     }]
 });
