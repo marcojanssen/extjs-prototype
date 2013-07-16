@@ -22,6 +22,6 @@ Ext.define('Prototype.view.Viewport', {
         style: {
             backgroundImage: 'url(resources/img/background.jpg)'
         },
-        padding: '40, 0, 40, 40'
+        padding: '40, 40, 40, 40'
     }]
 });
