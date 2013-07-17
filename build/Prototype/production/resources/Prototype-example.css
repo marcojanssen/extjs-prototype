@@ -9836,12 +9836,12 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 
 /* line 212, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default {
-  font-size: 13px;
+  font-size: 20px;
   border: 1px solid #157fcc;
 }
 /* line 219, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default .x-tool-img {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 232, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -9876,11 +9876,11 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 
 /* line 260, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-text-container-default {
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
+  color: #2777be;
+  font-size: 20px;
+  font-weight: normal;
   font-family: arial, helvetica, verdana, sans-serif;
-  line-height: 15px;
+  line-height: 60px;
   padding: 1px 0 0;
   text-transform: none;
 }
@@ -9899,19 +9899,19 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 /* line 432, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 436, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-vertical {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 441, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-rtl.x-panel-header-default-vertical {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 494, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -9980,8 +9980,8 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 }
 /* line 36, ../../../../packages/ext-theme-base/sass/etc/mixins/rotate-element.scss */
 .x-ie9m .x-panel-header-default-vertical .x-panel-header-text-container {
-  background-color: #157fcc;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1), progid:DXImageTransform.Microsoft.Chroma(color=#157fcc);
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1), progid:DXImageTransform.Microsoft.Chroma(color=white);
 }
 
 /* line 527, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -9997,8 +9997,8 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 }
 /* line 36, ../../../../packages/ext-theme-base/sass/etc/mixins/rotate-element.scss */
 .x-ie9m .x-panel-header-default-vertical .x-rtl.x-panel-header-text-container {
-  background-color: #157fcc;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3), progid:DXImageTransform.Microsoft.Chroma(color=#157fcc);
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3), progid:DXImageTransform.Microsoft.Chroma(color=white);
 }
 
 /* line 551, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -10009,14 +10009,14 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 }
 /* line 556, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default .x-panel-header-glyph {
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   opacity: 0.5;
 }
 /* line 572, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-ie8m .x-panel-header-default .x-panel-header-glyph {
-  color: #8abfe5;
+  color: #93bbde;
 }
 
 /* line 580, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -10228,12 +10228,12 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 
 /* line 212, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-framed {
-  font-size: 13px;
+  font-size: 20px;
   border: 5px solid #157fcc;
 }
 /* line 219, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-framed .x-tool-img {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 232, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -10268,11 +10268,11 @@ body.x-nbr .x-btn-default-toolbar-large-frameInfo {
 
 /* line 260, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-text-container-default-framed {
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
+  color: #2777be;
+  font-size: 20px;
+  font-weight: normal;
   font-family: arial, helvetica, verdana, sans-serif;
-  line-height: 15px;
+  line-height: 60px;
   padding: 1px 0 0;
   text-transform: none;
 }
@@ -10446,12 +10446,12 @@ body.x-nbr .x-panel-default-framed-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px 5px 0 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-top-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -10594,18 +10594,18 @@ body.x-nbr .x-panel-header-default-framed-top-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px 5px 5px 0;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 178, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-rtl.x-panel-header-default-framed-right {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-right-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -10753,12 +10753,12 @@ body.x-nbr .x-panel-header-default-framed-right-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 0 5px 5px 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-bottom-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -10901,18 +10901,18 @@ body.x-nbr .x-panel-header-default-framed-bottom-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px 0 5px 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 178, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-rtl.x-panel-header-default-framed-left {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-left-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -11060,12 +11060,12 @@ body.x-nbr .x-panel-header-default-framed-left-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-top-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -11208,18 +11208,18 @@ body.x-nbr .x-panel-header-default-framed-collapsed-top-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 178, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-rtl.x-panel-header-default-framed-collapsed-right {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-right-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -11367,12 +11367,12 @@ body.x-nbr .x-panel-header-default-framed-collapsed-right-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-bottom-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -11515,18 +11515,18 @@ body.x-nbr .x-panel-header-default-framed-collapsed-bottom-frameInfo {
   padding: 5px 5px 5px 5px;
   border-width: 5px;
   border-style: solid;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 178, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-rtl.x-panel-header-default-framed-collapsed-left {
   background-image: none;
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-left-mc {
-  background-color: #157fcc;
+  background-color: white;
 }
 
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
@@ -11704,8 +11704,8 @@ body.x-nbr .x-panel-header-default-framed-collapsed-left-frameInfo {
 }
 /* line 36, ../../../../packages/ext-theme-base/sass/etc/mixins/rotate-element.scss */
 .x-ie9m .x-panel-header-default-framed-vertical .x-panel-header-text-container {
-  background-color: #157fcc;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1), progid:DXImageTransform.Microsoft.Chroma(color=#157fcc);
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1), progid:DXImageTransform.Microsoft.Chroma(color=white);
 }
 
 /* line 527, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -11721,8 +11721,8 @@ body.x-nbr .x-panel-header-default-framed-collapsed-left-frameInfo {
 }
 /* line 36, ../../../../packages/ext-theme-base/sass/etc/mixins/rotate-element.scss */
 .x-ie9m .x-panel-header-default-framed-vertical .x-rtl.x-panel-header-text-container {
-  background-color: #157fcc;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3), progid:DXImageTransform.Microsoft.Chroma(color=#157fcc);
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3), progid:DXImageTransform.Microsoft.Chroma(color=white);
 }
 
 /* line 551, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -11733,14 +11733,14 @@ body.x-nbr .x-panel-header-default-framed-collapsed-left-frameInfo {
 }
 /* line 556, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-framed .x-panel-header-glyph {
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   opacity: 0.5;
 }
 /* line 572, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-ie8m .x-panel-header-default-framed .x-panel-header-glyph {
-  color: #8abfe5;
+  color: #93bbde;
 }
 
 /* line 580, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -13212,7 +13212,7 @@ body.x-nbr .x-window-default-frameInfo {
 
 /* line 206, ../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-window-header-default {
-  font-size: 13px;
+  font-size: 20px;
   border-color: #3892d3;
   zoom: 1;
   background-color: #3892d3;
@@ -13258,11 +13258,11 @@ body.x-nbr .x-window-default-frameInfo {
 
 /* line 233, ../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-window-header-text-container-default {
-  color: white;
-  font-weight: bold;
-  line-height: 15px;
+  color: #2777be;
+  font-weight: normal;
+  line-height: 60px;
   font-family: arial, helvetica, verdana, sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   padding: 1px 0 0;
   text-transform: none;
 }
@@ -14447,21 +14447,21 @@ body.x-nbr .x-window-header-default-collapsed-left-frameInfo {
 .x-window-header-default .x-window-header-icon {
   width: 16px;
   height: 16px;
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   background-position: center center;
 }
 /* line 364, ../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-window-header-default .x-window-header-glyph {
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   opacity: 0.5;
 }
 /* line 380, ../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-ie8m .x-window-header-default .x-window-header-glyph {
-  color: #9bc8e9;
+  color: #2f84c8;
 }
 
 /* line 388, ../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
@@ -15860,17 +15860,17 @@ a.x-color-picker-item:hover {
 
 /* line 26, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-alt .x-grid-td {
-  background-color: #fafafa;
+  background-color: white;
 }
 /* line 30, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-before-over .x-grid-td {
   border-bottom-style: solid;
-  border-bottom-color: #e2eff8;
+  border-bottom-color: #2777be;
 }
 /* line 35, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-over .x-grid-td {
   border-bottom-style: solid;
-  border-bottom-color: #e2eff8;
+  border-bottom-color: #2777be;
 }
 /* line 40, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-before-selected .x-grid-td {
@@ -15885,28 +15885,31 @@ a.x-color-picker-item:hover {
 /* line 50, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-before-focused .x-grid-td {
   border-bottom-style: solid;
-  border-bottom-color: #e2eff8;
+  border-bottom-color: #2777be;
 }
 /* line 58, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-focused .x-grid-td {
-  background-color: #e2eff8;
+  color: white;
+  background-color: #2777be;
 }
 /* line 65, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-over .x-grid-td {
-  background-color: #e2eff8;
+  color: white;
+  background-color: #2777be;
 }
 /* line 73, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-selected .x-grid-td {
+  color: null;
   background-color: #c1ddf1;
 }
 /* line 82, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-focused .x-grid-td {
   border-bottom-style: solid;
-  border-bottom-color: #e2eff8;
+  border-bottom-color: #2777be;
 }
 /* line 96, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-with-row-lines .x-grid-row-focused-first .x-grid-td {
-  border-top: 1px solid #e2eff8;
+  border-top: 1px solid #2777be;
 }
 /* line 103, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-selected .x-grid-row-summary .x-grid-td {
@@ -15915,7 +15918,7 @@ a.x-color-picker-item:hover {
 }
 /* line 108, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-row-focused .x-grid-row-summary .x-grid-td {
-  border-bottom-color: #e2eff8;
+  border-bottom-color: #2777be;
   border-top-width: 0;
 }
 
@@ -15930,7 +15933,7 @@ a.x-color-picker-item:hover {
 /* line 125, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-with-row-lines .x-grid-table-over-first {
   border-top-style: solid;
-  border-top-color: #e2eff8;
+  border-top-color: #2777be;
 }
 /* line 130, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-with-row-lines .x-grid-table-selected-first {
@@ -15941,7 +15944,7 @@ a.x-color-picker-item:hover {
 /* line 143, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
 .x-grid-with-row-lines .x-grid-table-focused-first {
   border-top-style: solid;
-  border-top-color: #e2eff8;
+  border-top-color: #2777be;
 }
 
 /* line 149, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
@@ -16090,8 +16093,8 @@ a.x-color-picker-item:hover {
 
 /* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
 .x-column-header {
-  border-right: 1px solid silver;
-  color: white;
+  border-right: 0px solid silver;
+  color: #2777be;
   font: normal 13px/40px helvetica, arial, verdana, sans-serif;
   background-color: #f5f5f5;
 }
@@ -16099,17 +16102,17 @@ a.x-color-picker-item:hover {
 /* line 18, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
 .x-rtl.x-column-header {
   border-right: 0 none;
-  border-left: 1px solid silver;
+  border-left: 0px solid silver;
 }
 
 /* line 24, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
 .x-group-sub-header {
   background: transparent;
-  border-top: 1px solid silver;
+  border-top: 0px solid silver;
 }
 /* line 29, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
 .x-group-sub-header .x-column-header-inner {
-  padding: 6px 10px 7px 10px;
+  padding: 7px 10px 7px 10px;
 }
 
 /* line 34, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
@@ -20554,7 +20557,7 @@ body.x-nbr .x-btn-plain-toolbar-small-frameInfo {
   font-size: 13px;
   font-weight: bold;
   font-family: helvetica, arial, verdana, sans-serif;
-  line-height: 15px;
+  line-height: 60px;
   padding: 1px 0 0;
   text-transform: none;
 }
@@ -20683,14 +20686,14 @@ body.x-nbr .x-btn-plain-toolbar-small-frameInfo {
 }
 /* line 556, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-light .x-panel-header-glyph {
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   opacity: 0.5;
 }
 /* line 572, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-ie8m .x-panel-header-light .x-panel-header-glyph {
-  color: #eff4f8;
+  color: #83b0d8;
 }
 
 /* line 580, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -20947,7 +20950,7 @@ body.x-nbr .x-btn-plain-toolbar-small-frameInfo {
   font-size: 13px;
   font-weight: bold;
   font-family: helvetica, arial, verdana, sans-serif;
-  line-height: 15px;
+  line-height: 60px;
   padding: 1px 0 0;
   text-transform: none;
 }
@@ -22408,14 +22411,14 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 }
 /* line 556, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-light-framed .x-panel-header-glyph {
-  color: white;
+  color: #2777be;
   font-size: 16px;
   line-height: 16px;
   opacity: 0.5;
 }
 /* line 572, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-ie8m .x-panel-header-light-framed .x-panel-header-glyph {
-  color: #eff4f8;
+  color: #83b0d8;
 }
 
 /* line 580, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
@@ -22717,12 +22720,12 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 /* line 6, ../../../../ext/packages/ext-theme-neptune/sass/src/grid/column/Column.scss */
 .x-column-header-trigger {
   background-image: url(images/grid/hd-pop.png);
-  border-left: 1px solid silver;
+  border-left: 0px solid silver;
 }
 
 /* line 12, ../../../../ext/packages/ext-theme-neptune/sass/src/grid/column/Column.scss */
 .x-rtl.x-column-header-trigger {
-  border-right: 1px solid silver;
+  border-right: 0px solid silver;
   border-left: 0;
 }
 
@@ -22732,7 +22735,7 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 }
 /* line 20, ../../../../ext/packages/ext-theme-neptune/sass/src/grid/column/Column.scss */
 .x-column-header-last .x-column-header-over .x-column-header-trigger {
-  border-right: 1px solid silver;
+  border-right: 0px solid silver;
 }
 
 /* line 25, ../../../../ext/packages/ext-theme-neptune/sass/src/grid/column/Column.scss */
@@ -22746,7 +22749,7 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 }
 /* line 31, ../../../../ext/packages/ext-theme-neptune/sass/src/grid/column/Column.scss */
 .x-rtl.x-column-header-last .x-column-header-over .x-column-header-trigger {
-  border-left: 1px solid silver;
+  border-left: 0px solid silver;
 }
 
 /* line 2, ../../../../ext/packages/ext-theme-neptune/sass/src/layout/container/Accordion.scss */
