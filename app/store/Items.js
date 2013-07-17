@@ -5,17 +5,20 @@ Ext.define('Prototype.store.Items', {
 
     requires: ['Ext.data.proxy.Rest'],
 
-    root: 'items',
-
     autoLoad: true,
     autoSync: true,
+
+    buffered: true,
+    leadingBufferZone: 100,
+    pageSize: 25,
 
     proxy: {
         type: 'rest',
         url: 'rest/',
         reader: {
             type: 'json',
-            root: 'data'
+            root: 'items',
+            totalProperty: 'total'
         },
         writer: {
             type: 'json'

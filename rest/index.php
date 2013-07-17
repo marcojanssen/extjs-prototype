@@ -18,6 +18,7 @@ $app->get('/', function (Request $request) use ($app) {
 
     $limit = $request->query->get('limit');
     $start = $request->query->get('start');
+    $items = array();
 
     if(empty($limit)) {
         $limit = 25;
@@ -28,7 +29,10 @@ $app->get('/', function (Request $request) use ($app) {
     }
 
     $sql = "SELECT * FROM items LIMIT ?,?";
-    $items = $app['db']->fetchAll($sql, array((int) $start, (int) $limit));
+    $items['items'] = $app['db']->fetchAll($sql, array((int) $start, (int) $limit));
+
+    $sql = "SELECT COUNT(*) FROM items";
+    $items['total'] = $app['db']->fetchColumn($sql);
 
     return json_encode($items);
 });
