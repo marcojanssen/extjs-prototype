@@ -3,7 +3,8 @@ Ext.define('Prototype.view.home.Index', {
     requires:[
         'Ext.tab.Panel',
         'Ext.layout.container.Border',
-        'Ext.grid.Panel'
+        'Ext.grid.Panel',
+        'Ext.grid.column.Action'
     ],
 
     layout: 'border',
@@ -27,7 +28,7 @@ Ext.define('Prototype.view.home.Index', {
         title: 'Grid',
         stateful: true,
         stateId: 'home.Grid',
-        store: Ext.create('Prototype.store.Home'),
+        store: Ext.create('Prototype.store.Items'),
         columns: [
             { text: 'Name',  dataIndex: 'name' },
             { text: 'Email', dataIndex: 'email', flex: 1 },

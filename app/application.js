@@ -4,8 +4,10 @@ Ext.define('Prototype.Application', {
     extend: 'Ext.app.Application',
 
     requires: [
+        'Ext.data.*',
+        'Ext.grid.*',
         'Ext.ux.Router',
-        'Prototype.store.Home'
+        'Prototype.store.Items'
     ],
 
     views: [
