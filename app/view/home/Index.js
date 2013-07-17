@@ -9,15 +9,21 @@ Ext.define('Prototype.view.home.Index', {
 
     layout: 'border',
 
-    height: 200,
+    style: {backgroundColor:'transparent'},
 
     items: [{
+        region: 'east',
+        xtype: 'container',
+        width: 25,
+        minWidth: 25,
+        height: 25
+
+    }, {
         region: 'east',
         xtype: 'panel',
         width: 250,
         minWidth: 100,
         height: 200,
-        split: true,
         stateful: true,
         stateId: 'home.grid.Filter',
         collapsible: true
@@ -59,10 +65,6 @@ Ext.define('Prototype.view.home.Index', {
                     }
                 }]
             }
-        ],
-        style: {
-            backgroundColor: 'none'
-        },
-        margin: '0, 20, 0, 0'
+        ]
     }]
 });
