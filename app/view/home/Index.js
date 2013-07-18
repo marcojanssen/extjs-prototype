@@ -26,7 +26,8 @@ Ext.define('Prototype.view.home.Index', {
         height: 200,
         stateful: true,
         stateId: 'home.grid.Filter',
-        collapsible: true
+        collapsible: true,
+        ui: 'airy-framed'
 
     }, {
         region: 'center',
@@ -35,6 +36,7 @@ Ext.define('Prototype.view.home.Index', {
         stateful: true,
         stateId: 'home.Grid',
         store: Ext.create('Prototype.store.Items'),
+        ui: 'airy-framed',
         columns: [
             { text: 'Name',  dataIndex: 'name' },
             { text: 'Email', dataIndex: 'email', flex: 1 },
