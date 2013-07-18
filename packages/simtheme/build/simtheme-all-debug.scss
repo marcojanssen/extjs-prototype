@@ -1,4 +1,4 @@
-$image-search-path: 'C:/simdev/extjs-prototype/packages/simtheme/build/resources' !default;
+$image-search-path: 'C:/dev/extjs-prototype/packages/simtheme/build/resources' !default;
 $theme-name:  'simtheme' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -559,6 +559,9 @@ $include-extthemeneptune-toolbar-toolbar: true;
 @import '../../../ext/packages/ext-theme-neptune/sass/etc/all';
 /* including package simtheme */
 @import '../sass/etc/all';
+/* including package simtheme */
+@import '../sass/var/Component';
+@import '../sass/var/panel/Panel';
 /* including package ext-theme-neptune */
 @import '../../../ext/packages/ext-theme-neptune/sass/var/Component';
 @import '../../../ext/packages/ext-theme-neptune/sass/var/LoadMask';
@@ -795,3 +798,7 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 @import '../../../ext/packages/ext-theme-neptune/sass/src/grid/plugin/RowEditing';
 @import '../../../ext/packages/ext-theme-neptune/sass/src/layout/container/Accordion';
 @import '../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer';
+/* including package simtheme */
+$simtheme-resource-path: 'images' !default;
+$relative-image-path-for-uis: $simtheme-resource-path;
+@import '../sass/src/panel/Panel';
