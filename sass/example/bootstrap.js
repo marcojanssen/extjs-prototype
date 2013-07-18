@@ -37,6 +37,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.form.MultiSelect": [
     "Ext.ux.Multiselect"
   ],
+  "Prototype.store.Items": [],
   "Ext.ux.DataView.LabelEditor": [],
   "Ext.ux.GroupTabPanel": [],
   "Ext.ux.grid.filter.StringFilter": [],
@@ -60,6 +61,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.TabReorderer": [],
   "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [],
+  "Prototype.model.Item": [],
   "ExtThemeNeptune.layout.component.Dock": [],
   "Prototype.view.home.Index": [],
   "ExtThemeNeptune.panel.Table": [],
@@ -85,7 +87,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.form.SearchField": [],
   "Ext.ux.dd.CellFieldDropZone": [],
   "Prototype.controller.Home": [],
-  "Prototype.store.Home": [],
   "Ext.ux.LiveSearchGridPanel": [],
   "Ext.ux.grid.filter.DateFilter": [],
   "Ext.ux.DataTip": [],
@@ -138,6 +139,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.multiselect",
     "widget.multiselectfield"
   ],
+  "Prototype.store.Items": [],
   "Ext.ux.DataView.LabelEditor": [],
   "Ext.ux.GroupTabPanel": [
     "widget.grouptabpanel"
@@ -179,6 +181,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
   ],
+  "Prototype.model.Item": [],
   "ExtThemeNeptune.layout.component.Dock": [],
   "Prototype.view.home.Index": [],
   "ExtThemeNeptune.panel.Table": [],
@@ -212,7 +215,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.dd.CellFieldDropZone": [],
   "Prototype.controller.Home": [],
-  "Prototype.store.Home": [],
   "Ext.ux.LiveSearchGridPanel": [],
   "Ext.ux.grid.filter.DateFilter": [
     "gridfilter.date"
