@@ -27,7 +27,7 @@ Ext.define('Prototype.view.home.Index', {
         stateful: true,
         stateId: 'home.grid.Filter',
         collapsible: true,
-        ui: 'airy-framed'
+        ui: 'filter-panel'
 
     }, {
         region: 'center',
