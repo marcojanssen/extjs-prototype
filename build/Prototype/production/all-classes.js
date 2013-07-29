@@ -61798,18 +61798,11 @@ Ext.define('ExtThemeNeptune.tab.Tab', {override: 'Ext.tab.Tab', border: false});
 }}, 0, 0, 0, 0, 0, 0, [Prototype.controller, 'Home'], 0));
 ;
 
-(Ext.cmd.derive('Prototype.controller.MainMenu', Ext.app.Controller, {init: function() {
-  this.control({"#mainMenuLeft > menuitem": {click: this.onMainNavClick}});
-}, onMainNavClick: function(menuitem) {
-  Ext.Router.redirect(menuitem.itemId === 'home' ? '' : menuitem.itemId);
-}}, 0, 0, 0, 0, 0, 0, [Prototype.controller, 'MainMenu'], 0));
-;
-
 (Ext.cmd.derive('Prototype.controller.Settings', Ext.app.Controller, {index: function() {
 }}, 0, 0, 0, 0, 0, 0, [Prototype.controller, 'Settings'], 0));
 ;
 
-(Ext.cmd.derive('Prototype.view.MainMenu', Ext.container.Container, {height: 35, bodyBorder: false, border: false, cls: 'menu', html: '<div class="container pull-left">' + '<ul class="menu">' + '<li><a href="#">Product</a></li>' + '<li class="page1"><a href="#home">Page 1</a></li>' + '<li class="page2"><a href="#home">Page 2</a></li>' + '</ul>' + '</div>' + '<div class="container pull-right">' + '<ul class="menu">' + '<li class="home"><a href="#home">Home</a></li>' + '<li class="profile"><a href="#home">Marco Janssen</a></li>' + '</ul>' + '</div>'}, 0, ["MainMenu"], ["MainMenu", "component", "container", "box"], {"MainMenu": true, "component": true, "container": true, "box": true}, ["widget.MainMenu"], 0, [Prototype.view, 'MainMenu'], 0));
+(Ext.cmd.derive('Prototype.view.MainMenu', Ext.container.Container, {height: 35, bodyBorder: false, border: false, cls: 'menu', html: '<div class="container pull-left">' + '<ul class="menu">' + '<li><a href="#">Product</a></li>' + '<li class="page1"><a href="#">Page 1</a></li>' + '<li class="page2"><a href="#settings">Page 2</a></li>' + '</ul>' + '</div>' + '<div class="container pull-right">' + '<ul class="menu">' + '<li class="home"><a href="#">Home</a></li>' + '<li class="profile"><a href="#">Marco Janssen</a></li>' + '</ul>' + '</div>'}, 0, ["MainMenu"], ["MainMenu", "component", "container", "box"], {"MainMenu": true, "component": true, "container": true, "box": true}, ["widget.MainMenu"], 0, [Prototype.view, 'MainMenu'], 0));
 ;
 
 (Ext.cmd.derive('Prototype.view.home.Index', Ext.container.Container, {layout: 'border', style: {backgroundColor: 'transparent'}, items: [{region: 'east', xtype: 'container', width: 25, minWidth: 25, height: 25}, {region: 'east', xtype: 'panel', width: 250, minWidth: 100, height: 200, stateful: true, stateId: 'home.grid.Filter', collapsible: true, ui: 'filter-panel'}, {region: 'center', xtype: 'grid', title: 'Grid', stateful: true, stateId: 'home.Grid', store: Ext.create('Prototype.store.Items'), ui: 'center-grid', columns: [{text: 'Name', dataIndex: 'name'}, {text: 'Email', dataIndex: 'email', flex: 1}, {text: 'Phone', dataIndex: 'phone'}, {xtype: 'actioncolumn', width: 100, items: [{icon: 'resources/img/glyphicons/glyphicons_030_pencil.png', tooltip: 'Edit', handler: function(grid, rowIndex, colIndex) {
@@ -61827,27 +61820,33 @@ Ext.define('ExtThemeNeptune.tab.Tab', {override: 'Ext.tab.Tab', border: false});
 (Ext.cmd.derive('Prototype.view.settings.Index', Ext.form.Panel, {bodyPadding: 20, buttonAlign: 'left', autoScroll: true, fieldDefaults: {labelAlign: 'right', labelWidth: 85, msgTarget: 'side'}, items: [{xtype: 'fieldset', title: 'Contact Information', defaultType: 'textfield', defaults: {width: 280}, items: [{fieldLabel: 'First Name', emptyText: 'First Name', name: 'first'}, {fieldLabel: 'Last Name', emptyText: 'Last Name', name: 'last'}, {fieldLabel: 'Company', name: 'company'}, {fieldLabel: 'Email', name: 'email', vtype: 'email'}, {xtype: 'combobox', fieldLabel: 'State', name: 'state', emptyText: 'Select a state...', store: []}, {xtype: 'datefield', fieldLabel: 'Date of Birth', name: 'dob', allowBlank: false, maxValue: new Date()}]}], buttons: [{text: 'Load'}, {text: 'Submit', disabled: true, formBind: true}]}, 0, 0, ["panel", "form", "component", "container", "box"], {"panel": true, "form": true, "component": true, "container": true, "box": true}, 0, 0, [Prototype.view.settings, 'Index'], 0));
 ;
 
-(Ext.cmd.derive('Prototype.Application', Ext.app.Application, {name: 'Prototype', views: ['MainMenu', 'home.Index', 'settings.Index'], controllers: ['Home', 'MainMenu', 'Settings'], stores: [], routes: {'/': 'home#index', 'settings': 'settings#index', 'users': 'users#list', 'users/:id/edit': 'users#edit'}, launch: function() {
+(Ext.cmd.derive('Prototype.Application', Ext.app.Application, {name: 'Prototype', views: ['MainMenu', 'home.Index', 'settings.Index'], controllers: ['Home', 'Settings'], stores: [], routes: {'/': 'home#index', 'settings': 'settings#index', 'users': 'users#list', 'users/:id/edit': 'users#edit'}, launch: function() {
   Ext.ux.Router.on({routemissed: function(token) {
   Ext.window.MessageBox.show({title: 'Error 404', msg: 'Route not found: ' + token, buttons: Ext.window.MessageBox.OK, icon: Ext.window.MessageBox.ERROR});
 }, beforedispatch: function(token, match, params) {
   Ext.log('beforedispatch ' + token);
 }, dispatch: function(token, match, params, controller) {
-  var view, viewClass, action, viewport = Ext.getCmp('viewport'), target = viewport.down('#viewport-target'), navToolbar = viewport.down('#main-nav-toolbar');
+  var view, viewClass, action, viewport = Ext.getCmp('viewport'), target = viewport.down('#viewport-target');
   action = Ext.String.capitalize(match.action);
   controller = match.controller.charAt(0).toLowerCase() + match.controller.substr(1);
   viewClass = Ext.ClassManager.get('Prototype.view.' + controller + '.' + action);
   if (viewClass) 
   {
     view = Ext.create(viewClass, {border: false});
-    target.removeAll();
-    target.add(view);
+    target.getEl().slideOut('l', {duration: 500, callback: function() {
+  target.removeAll();
+  view.suspendEvents();
+  target.add(view);
+}, scope: this}).slideIn('r', {duration: 500, callback: function() {
+  target.doLayout();
+  view.resumeEvents();
+}, scope: this});
   }
 }});
 }}, 0, 0, 0, 0, 0, 0, [Prototype, 'Application'], 0));
 ;
 
-(Ext.cmd.derive('Prototype.view.Viewport', Ext.container.Viewport, {id: 'viewport', layout: {type: 'border'}, items: [{region: 'north', xtype: 'MainMenu'}, {region: 'center', xtype: 'container', itemId: 'viewport-target', layout: 'fit', style: {backgroundImage: 'url(resources/img/background.jpg)'}, padding: '40, 40, 40, 40'}]}, 0, 0, ["viewport", "component", "container", "box"], {"viewport": true, "component": true, "container": true, "box": true}, 0, 0, [Prototype.view, 'Viewport'], 0));
+(Ext.cmd.derive('Prototype.view.Viewport', Ext.container.Viewport, {id: 'viewport', layout: {type: 'border'}, style: {backgroundImage: 'url(resources/img/background.jpg)'}, items: [{region: 'north', xtype: 'MainMenu'}, {region: 'center', xtype: 'container', id: 'viewport-target', layout: 'fit', padding: '40, 40, 40, 40'}]}, 0, 0, ["viewport", "component", "container", "box"], {"viewport": true, "component": true, "container": true, "box": true}, 0, 0, [Prototype.view, 'Viewport'], 0));
 ;
 
 Ext.application({name: 'Prototype', extend: 'Prototype.Application', autoCreateViewport: true});

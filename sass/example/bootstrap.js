@@ -59,7 +59,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
-  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [],
   "Prototype.model.Item": [],
   "ExtThemeNeptune.layout.component.Dock": [],
@@ -177,7 +176,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
-  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
   ],

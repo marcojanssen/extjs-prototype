@@ -7,6 +7,8 @@ Ext.define('Prototype.view.settings.Index', {
         'Ext.form.field.Date',
         'Ext.Button'
     ],
+
+    ui: 'center-grid',
     
     bodyPadding: 20,
     buttonAlign: 'left',

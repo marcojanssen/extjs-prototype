@@ -78,25 +78,24 @@ Ext.define('Prototype.Application', {
 
                 if (viewClass) {
 
-                    // create view
-                    view = Ext.create(viewClass, {
-                        border: false
-                    });
-
                     // clear target and add new view
                     target.getEl().slideOut('l', {
-                        duration: 500,
+                        duration: 400,
                         callback: function() {
                             target.removeAll();
-                            view.suspendEvents();
+
+                            // create view
+                            view = Ext.create(viewClass, {
+                                border: false
+                            });
+
                             target.add(view);
                         },
                         scope: this
                     }).slideIn('r', {
-                        duration: 500,
+                        duration: 400,
                         callback: function() {
                             target.doLayout();
-                            view.resumeEvents();
                         },
                         scope: this
                     });

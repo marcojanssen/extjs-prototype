@@ -1292,9 +1292,11 @@ body.x-nbr .x-panel-header-filter-panel-collapsed-left-frameInfo {
   border-width: 1px !important;
 }
 
-/* line 38, ../../../../packages/simtheme/sass/src/panel/Panel.scss */
+/* line 39, ../../../../packages/simtheme/sass/src/panel/Panel.scss */
+.x-panel-filter-panel,
 .x-panel-center-grid {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 255, 0.2) 0 0 3px 1px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 255, 0.2) 0 0 3px 1px inset;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 255, 0.2) 0 0 3px 1px inset;
+  margin: 30px;
+  -webkit-box-shadow: 0px 0px 15px #333333;
+  -moz-box-shadow: 0px 0px 15px #333333;
+  box-shadow: 0px 0px 15px #333333;
 }

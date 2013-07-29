@@ -22,7 +22,6 @@ Ext.define('Prototype.view.Viewport', {
         region: 'center',
         xtype: 'container',
         id: 'viewport-target',
-        layout: 'fit',
-        padding: '40, 40, 40, 40'
+        layout: 'fit'
     }]
 });
