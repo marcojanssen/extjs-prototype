@@ -1296,7 +1296,7 @@ body.x-nbr .x-panel-header-filter-panel-collapsed-left-frameInfo {
 .x-panel-filter-panel,
 .x-panel-center-grid {
   margin: 30px;
-  -webkit-box-shadow: 0px 0px 15px #333333;
-  -moz-box-shadow: 0px 0px 15px #333333;
-  box-shadow: 0px 0px 15px #333333;
+  /*-webkit-box-shadow: 0px 0px 15px #000000;
+  -moz-box-shadow: 0px 0px 15px #000000;
+  box-shadow: 0px 0px 15px #000000;*/
 }
