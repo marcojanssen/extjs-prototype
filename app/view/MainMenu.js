@@ -8,15 +8,15 @@ Ext.define('Prototype.view.MainMenu', {
     border: false,
 
     html: '<div style="float:left; background: url(\'../resources/images/background-menu.png\')">' +
-              '<ul>' +
-                  '<li>a</li>' +
-                  '<li>b</li>' +
+              '<ul class="menu">' +
+                  '<li><a href="#home">a</a></li>' +
+                  '<li><a href="#home">b</a></li>' +
               '</ul>' +
           '</div>' +
           '<div style="float:right">' +
-             '<ul>' +
-                '<li>a</li>' +
-                '<li>b</li>' +
+             '<ul class="menu">' +
+                '<li><a href="#home">a</a></li>' +
+                '<li><a href="#home">b</a></li>' +
             '</ul>' +
           '</div>'
 });

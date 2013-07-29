@@ -63,6 +63,18 @@
 /* including package ext-theme-neutral */
 /* including package ext-theme-neptune */
 /* including package simtheme */
+/* line 1, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li {
+  display: inline;
+}
+
 /* including package simtheme */
 /* including package ext-theme-neptune */
 /**

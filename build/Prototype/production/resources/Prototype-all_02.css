@@ -1,3 +1,20 @@
+/* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-panel-header-filter-panel-right {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+/* line 255, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+body.x-nbr .x-panel-header-filter-panel-right-frameInfo {
+  font-family: dh-0-4-4-0-1-1-1-0-9-9-9-10;
+}
+
 /* line 322, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-filter-panel-right-tl {
   background-position: 0 -8px;
