@@ -18,7 +18,6 @@ Ext.define('Prototype.Application', {
 
     controllers: [
         'Home',
-        'MainMenu',
         'Settings'
     ],
 
@@ -65,10 +64,10 @@ Ext.define('Prototype.Application', {
              * Here I'm using these 2 information to get the view and render.
              */
             dispatch: function(token, match, params, controller) {
+
                 var view, viewClass, action,
                     viewport    = Ext.getCmp('viewport'),
-                    target      = viewport.down('#viewport-target'),
-                    navToolbar  = viewport.down('#main-nav-toolbar');
+                    target      = viewport.down('#viewport-target');
 
                 // adjust controller and action names
                 action      = Ext.String.capitalize(match.action);
