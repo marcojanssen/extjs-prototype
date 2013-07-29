@@ -2,49 +2,21 @@ Ext.define('Prototype.view.MainMenu', {
     extend: 'Ext.container.Container',
 
     xtype: 'MainMenu',
-    height: 23,
-
-    layout: {
-        type: 'hbox',
-        align: 'stretchmax'
-    },
+    height: 50,
 
     bodyBorder: false,
     border: false,
 
-    items: [{
-        xtype: 'menu',
-        id: "mainMenuLeft",
-        layout: {
-            type: 'hbox'
-        },
-        floating: false,
-        flex: 2,
-        items: [{
-            text: 'home',
-            itemId: 'home'
-        },
-        {
-            text: 'beheer',
-            itemId: 'settings'
-        }]
-    },{
-        xtype: 'menu',
-        itemId: "mainMenuRight",
-        layout: {
-            type: 'hbox',
-            pack : 'end'
-        },
-        floating: false,
-        flex: 1,
-        items: [{
-            text: 'main3',
-            iconCls: 'add16'
-        },
-        {
-            text: 'main4',
-            iconCls: 'add16'
-        }]
-
-    }]
+    html: '<div style="float:left; background: url(\'../resources/images/background-menu.png\')">' +
+              '<ul>' +
+                  '<li>a</li>' +
+                  '<li>b</li>' +
+              '</ul>' +
+          '</div>' +
+          '<div style="float:right">' +
+             '<ul>' +
+                '<li>a</li>' +
+                '<li>b</li>' +
+            '</ul>' +
+          '</div>'
 });

@@ -81,10 +81,10 @@ this file in most cases.
         <!-- default the build environment to production if it is unset by this point -->
         <property name="args.environment" value="production"/>
         <property name="CR" value="&#10;"/>
-        
+
         <x-load-properties file="${app.config.dir}/${args.environment}.properties" required="0"/>
         <x-load-properties file="${app.config.dir}/build.properties" required="1"/>
-        
+
         <if>
             <x-is-true value="${build.compression.yui}"/>
             <then>

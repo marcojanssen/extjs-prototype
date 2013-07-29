@@ -22806,7 +22806,6 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 }
 /* line 219, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-center-grid .x-tool-img {
-  background-image: url(images/tools/tool-sprites-light.png);
   background-color: white;
 }
 
@@ -24531,7 +24530,6 @@ body.x-nbr .x-panel-header-center-grid-collapsed-left-frameInfo {
 }
 /* line 219, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-filter-panel .x-tool-img {
-  background-image: url(images/tools/tool-sprites-light.png);
   background-color: black;
 }
 
