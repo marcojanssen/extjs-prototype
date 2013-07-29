@@ -84,8 +84,27 @@ Ext.define('Prototype.Application', {
                     });
 
                     // clear target and add new view
-                    target.removeAll();
-                    target.add(view);
+                    target.getEl().slideOut('l', {
+                        duration: 500,
+                        callback: function() {
+                            target.removeAll();
+                            view.suspendEvents();
+                            target.add(view);
+                        },
+                        scope: this
+                    }).slideIn('r', {
+                        duration: 500,
+                        callback: function() {
+                            target.doLayout();
+                            view.resumeEvents();
+                        },
+                        scope: this
+                    });
+
+
+
+
+
                 }
             }
         });

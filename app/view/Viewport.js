@@ -11,17 +11,18 @@ Ext.define('Prototype.view.Viewport', {
         type: 'border'
     },
 
+    style: {
+        backgroundImage: 'url(resources/img/background.jpg)'
+    },
+
     items: [{
         region: 'north',
         xtype: 'MainMenu'
     }, {
         region: 'center',
         xtype: 'container',
-        itemId: 'viewport-target',
+        id: 'viewport-target',
         layout: 'fit',
-        style: {
-            backgroundImage: 'url(resources/img/background.jpg)'
-        },
         padding: '40, 40, 40, 40'
     }]
 });
