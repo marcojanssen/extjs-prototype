@@ -63,6 +63,16 @@
 /* including package ext-theme-neutral */
 /* including package ext-theme-neptune */
 /* including package simtheme */
+/* line 1, ../../sass/etc/all.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 5, ../../sass/etc/all.scss */
+.pull-right {
+  float: right;
+}
+
 /* including package simtheme */
 /* including package ext-theme-neptune */
 /**
@@ -22795,18 +22805,17 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 /* including package simtheme */
 /* line 206, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-center-grid {
-  border-color: #d8d9d9;
+  border-color: white;
   padding: 0;
 }
 
 /* line 212, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-center-grid {
   font-size: 13px;
-  border: 1px solid #d8d9d9;
+  border: 1px solid white;
 }
 /* line 219, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-center-grid .x-tool-img {
-  background-image: url(images/tools/tool-sprites-light.png);
   background-color: white;
 }
 
@@ -22842,7 +22851,7 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 
 /* line 260, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-text-container-center-grid {
-  color: #d8d9d9;
+  color: #2777be;
   font-size: 13px;
   font-weight: bold;
   font-family: helvetica, arial, verdana, sans-serif;
@@ -22854,7 +22863,7 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 /* line 272, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-body-center-grid {
   background: white;
-  border-color: #d8d9d9;
+  border-color: white;
   color: black;
   font-size: 13px;
   font-size: normal;
