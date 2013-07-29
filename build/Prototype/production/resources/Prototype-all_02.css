@@ -1,3 +1,37 @@
+/*<if slicer>*/
+/* line 78, ../../../../packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-panel-header-filter-panel-top:after {
+  display: none;
+  content: "x-slicer:corners:url(images/panel-header/panel-header-filter-panel-top-corners.gif), sides:url(images/panel-header/panel-header-filter-panel-top-sides.gif)";
+}
+
+/*</if slicer>*/
+/* */
+/* line 137, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-right {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 9px 9px 9px 10px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  background-color: black;
+}
+
+/* line 189, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-right-mc {
+  background-color: black;
+}
+
 /* line 235, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-nbr .x-panel-header-filter-panel-right {
   padding: 0 !important;

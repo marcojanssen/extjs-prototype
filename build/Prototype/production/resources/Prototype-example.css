@@ -64,15 +64,30 @@
 /* including package ext-theme-neptune */
 /* including package simtheme */
 /* line 1, ../../../../packages/simtheme/sass/etc/all.scss */
+div.menu {
+  background-image: url("img/background-menu.png");
+}
+
+/* line 5, ../../../../packages/simtheme/sass/etc/all.scss */
 ul.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 7, ../../../../packages/simtheme/sass/etc/all.scss */
+/* line 11, ../../../../packages/simtheme/sass/etc/all.scss */
 ul.menu li {
   display: inline;
+}
+
+/* line 15, ../../../../packages/simtheme/sass/etc/all.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 19, ../../../../packages/simtheme/sass/etc/all.scss */
+.pull-right {
+  float: right;
 }
 
 /* including package simtheme */

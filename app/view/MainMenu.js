@@ -7,13 +7,13 @@ Ext.define('Prototype.view.MainMenu', {
     bodyBorder: false,
     border: false,
 
-    html: '<div style="float:left; background: url(\'../resources/images/background-menu.png\')">' +
+    html: '<div class="container menu pull-left">' +
               '<ul class="menu">' +
                   '<li><a href="#home">a</a></li>' +
                   '<li><a href="#home">b</a></li>' +
               '</ul>' +
           '</div>' +
-          '<div style="float:right">' +
+          '<div class="container menu pull-right">' +
              '<ul class="menu">' +
                 '<li><a href="#home">a</a></li>' +
                 '<li><a href="#home">b</a></li>' +
