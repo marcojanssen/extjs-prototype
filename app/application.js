@@ -90,19 +90,13 @@ Ext.define('Prototype.Application', {
                             });
 
                             target.add(view);
-                        },
-                        scope: this
-                    }).slideIn('r', {
-                        duration: 400,
-                        callback: function() {
                             target.doLayout();
+                            target.getEl().slideIn('r',{
+                                duration: 400
+                            });
                         },
                         scope: this
                     });
-
-
-
-
 
                 }
             }
