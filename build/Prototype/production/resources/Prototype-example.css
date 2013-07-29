@@ -72,7 +72,7 @@ div.menu {
 ul.menu {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0 0 0;
 }
 
 /* line 11, ../../../../packages/simtheme/sass/etc/all.scss */
@@ -81,11 +81,55 @@ ul.menu li {
 }
 
 /* line 15, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li a {
+  width: 150px;
+  display: block;
+  float: left;
+  padding-left: 30px;
+  height: 35px;
+  color: #EDEDED;
+}
+
+/* line 24, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li a:hover {
+  color: #FFFFFF;
+}
+
+/* line 28, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li a:active {
+  color: #FFFFFF;
+}
+
+/* line 32, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li.page1 a {
+  background-image: url("img/glyphicons/glyphicons_307_life_preserver.png");
+  background-repeat: no-repeat;
+}
+
+/* line 37, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li.page2 a {
+  background-image: url("img/glyphicons/glyphicons_308_share_alt.png");
+  background-repeat: no-repeat;
+}
+
+/* line 42, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li.home a {
+  background-image: url("img/glyphicons/glyphicons_309_comments.png");
+  background-repeat: no-repeat;
+}
+
+/* line 47, ../../../../packages/simtheme/sass/etc/all.scss */
+ul.menu li.profile a {
+  background-image: url("img/glyphicons/glyphicons_319_sort.png");
+  background-repeat: no-repeat;
+}
+
+/* line 52, ../../../../packages/simtheme/sass/etc/all.scss */
 .pull-left {
   float: left;
 }
 
-/* line 19, ../../../../packages/simtheme/sass/etc/all.scss */
+/* line 56, ../../../../packages/simtheme/sass/etc/all.scss */
 .pull-right {
   float: right;
 }

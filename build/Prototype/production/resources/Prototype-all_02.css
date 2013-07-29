@@ -1,3 +1,23 @@
+/* line 425, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-top-ml,
+.x-panel-header-filter-panel-top-mr {
+  zoom: 1;
+  background-image: url(images/panel-header/panel-header-filter-panel-top-sides.gif);
+  background-repeat: repeat-y;
+}
+
+/* line 437, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-top-mc {
+  padding: 6px 6px 10px 6px;
+}
+
+/* line 446, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-strict .x-ie7 .x-panel-header-filter-panel-top-tl,
+.x-strict .x-ie7 .x-panel-header-filter-panel-top-bl {
+  position: relative;
+  right: 0;
+}
+
 /*<if slicer>*/
 /* line 78, ../../../../packages/ext-theme-base/sass/etc/mixins/slicer.scss */
 .x-panel-header-filter-panel-top:after {
