@@ -17,6 +17,9 @@ Ext.define('Prototype.controller.SubMenu', {
      * @param match
      */
     beforeDispatchSubMenu: function(uri, match) {
+        var submenu = this.getSubMenu();
+        submenu.removeAll();
+
         this.slideOut();
     },
 
@@ -29,8 +32,6 @@ Ext.define('Prototype.controller.SubMenu', {
      */
     dispatchSubMenu: function(uri, match, params, controller) {
         var submenu = this.getSubMenu();
-
-        submenu.removeAll();
 
         if('Settings' === match.controller) {
             submenu.add(this.getSettingsSubMenuItems());
@@ -50,7 +51,11 @@ Ext.define('Prototype.controller.SubMenu', {
      * @returns {Array}
      */
     getSettingsSubMenuItems: function() {
-        return [];
+        return [{
+            text: 'Save'
+        },{
+            text: 'Terminate'
+        }];
     },
 
     /**
