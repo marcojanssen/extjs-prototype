@@ -91,9 +91,13 @@ Ext.define('Prototype.Application', {
                             });
 
                             target.add(view);
-                            target.doLayout();
+
                             target.getEl().slideIn('r',{
-                                duration: 400
+                                duration: 400,
+                                callback: function() {
+                                    target.doLayout();
+                                },
+                                scope: this
                             });
                         },
                         scope: this
