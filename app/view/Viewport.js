@@ -19,6 +19,9 @@ Ext.define('Prototype.view.Viewport', {
         region: 'north',
         xtype: 'MainMenu'
     }, {
+        region: 'north',
+        xtype: 'SubMenu'
+    }, {
         region: 'center',
         xtype: 'container',
         id: 'viewport-target',

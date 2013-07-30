@@ -12,11 +12,13 @@ Ext.define('Prototype.Application', {
 
     views: [
         'MainMenu',
+        'SubMenu',
         'home.Index',
         'settings.Index'
     ],
 
     controllers: [
+        'SubMenu',
         'Home',
         'Settings'
     ],
