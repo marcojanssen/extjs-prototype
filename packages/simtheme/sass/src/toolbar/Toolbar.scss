@@ -1,4 +1,4 @@
-@if $include-panel-menu-sub-ui {
+@if $include-toolbar-menu-sub-ui {
   @include extjs-toolbar-ui(
       $ui: 'menu-sub',
 
