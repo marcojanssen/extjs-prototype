@@ -24,6 +24,7 @@ Ext.define('Prototype.view.home.Index', {
         width: 250,
         minWidth: 100,
         height: 200,
+        stateEvents: ['sortchange','filterchange'],
         stateful: true,
         stateId: 'home.grid.Filter',
         collapsible: true,
