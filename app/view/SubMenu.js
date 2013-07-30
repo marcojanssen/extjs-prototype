@@ -4,6 +4,7 @@ Ext.define('Prototype.view.SubMenu', {
     xtype: 'SubMenu',
     height: 45,
     padding: '0 0 0 20px',
+    ui: 'menu-sub',
 
     items: [
         {

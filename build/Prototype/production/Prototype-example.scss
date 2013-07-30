@@ -1,4 +1,4 @@
-$image-search-path: 'C:/simdev/extjs-prototype/build/Prototype/production/resources';
+$image-search-path: 'C:/dev/extjs-prototype/build/Prototype/production/resources';
 $theme-name:  'simtheme' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -555,9 +555,11 @@ $include-prototype-application: true;
 $include-prototype-app-application: true;
 $include-prototype-controller-home: true;
 $include-prototype-controller-settings: true;
+$include-prototype-controller-submenu: true;
 $include-prototype-model-item: true;
 $include-prototype-store-items: true;
 $include-prototype-view-mainmenu: true;
+$include-prototype-view-submenu: true;
 $include-prototype-view-viewport: true;
 $include-prototype-view-home-index: true;
 $include-prototype-view-settings-index: true;
@@ -571,6 +573,7 @@ $include-prototype-view-settings-index: true;
 @import '../../../packages/simtheme/sass/etc/all';
 /* including package simtheme */
 @import '../../../packages/simtheme/sass/var/Component';
+@import '../../../packages/simtheme/sass/var/toolbar/Toolbar';
 @import '../../../packages/simtheme/sass/var/panel/Panel';
 /* including package ext-theme-neptune */
 @import '../../../ext/packages/ext-theme-neptune/sass/var/Component';
@@ -812,4 +815,5 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 /* including package simtheme */
 $simtheme-resource-path: 'images' !default;
 $relative-image-path-for-uis: $simtheme-resource-path;
+@import '../../../packages/simtheme/sass/src/toolbar/Toolbar';
 @import '../../../packages/simtheme/sass/src/panel/Panel';

@@ -1,0 +1,11 @@
+@if $include-panel-menu-sub-ui {
+  @include extjs-toolbar-ui(
+      $ui: 'menu-sub',
+
+      $background-color: transparent
+  );
+}
+
+.#{$prefix}toolbar-menu-sub {
+    background-image: url('img/background-menu-sub.png');
+}
