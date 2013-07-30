@@ -1,3 +1,26 @@
+/* line 367, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-top-tc {
+  height: 4px;
+}
+
+/* line 370, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-top-bc {
+  height: 0;
+}
+
+/* line 381, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-panel-header-filter-panel-top-tl,
+.x-panel-header-filter-panel-top-bl,
+.x-panel-header-filter-panel-top-tr,
+.x-panel-header-filter-panel-top-br,
+.x-panel-header-filter-panel-top-tc,
+.x-panel-header-filter-panel-top-bc,
+.x-panel-header-filter-panel-top-ml,
+.x-panel-header-filter-panel-top-mr {
+  zoom: 1;
+  background-image: url(images/panel-header/panel-header-filter-panel-top-corners.gif);
+}
+
 /* line 425, ../../../../packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-filter-panel-top-ml,
 .x-panel-header-filter-panel-top-mr {
