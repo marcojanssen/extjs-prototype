@@ -39,6 +39,14 @@ Ext.define('Prototype.Application', {
 
 
     launch: function() {
+
+        var cp = Ext.create('Ext.state.CookieProvider', {
+            path: "/",
+            expires: new Date(new Date().getTime()+(1000*60*60*24*30)) //30 days
+        });
+
+        Ext.state.Manager.setProvider(cp);
+
         /*
          * Ext.ux.Router provides some events for better controlling
          * dispatch flow
