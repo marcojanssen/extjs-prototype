@@ -81,6 +81,8 @@ Ext.define('Prototype.Application', {
 
                 if (viewClass) {
 
+                    this.fireEvent('routechanged');
+
                     // clear target and add new view
                     target.getEl().slideOut('l', {
                         duration: 400,

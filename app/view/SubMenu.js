@@ -6,13 +6,9 @@ Ext.define('Prototype.view.SubMenu', {
     padding: '0 0 0 20px',
     ui: 'menu-sub',
 
-    items: [
-        {
-            // xtype: 'button', // default for Toolbars
-            text: 'Button'
-        },
-        {
-            text : 'Split Button'
-        }
-    ]
+    items: [{
+        text: 'New'
+    }, {
+        text : 'Split Button'
+    }]
 });
