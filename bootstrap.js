@@ -30,6 +30,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.ajax.XmlSimlet": [],
   "Ext.ux.dd.PanelFieldDragZone": [],
   "Ext.ux.DataView.DragSelector": [],
+  "Prototype.view.SubMenu": [],
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "ExtThemeNeptune.tab.Tab": [],
   "Ext.ux.grid.menu.ListMenu": [],
@@ -59,7 +60,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
-  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [],
   "Prototype.model.Item": [],
   "ExtThemeNeptune.layout.component.Dock": [],
@@ -70,6 +70,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.RowExpander": [],
   "Prototype.controller.Settings": [],
   "Ext.ux.event.Player": [],
+  "Prototype.controller.SubMenu": [],
   "Ext.ux.Router": [
     "Ext.Router"
   ],
@@ -129,6 +130,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.dd.PanelFieldDragZone": [],
   "Ext.ux.DataView.DragSelector": [],
+  "Prototype.view.SubMenu": [
+    "widget.SubMenu"
+  ],
   "ExtThemeNeptune.toolbar.Toolbar": [],
   "ExtThemeNeptune.tab.Tab": [],
   "Ext.ux.grid.menu.ListMenu": [],
@@ -177,7 +181,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.SlidingPager": [],
   "Ext.ux.TabReorderer": [],
-  "Prototype.controller.MainMenu": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
   ],
@@ -190,6 +193,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.RowExpander": [],
   "Prototype.controller.Settings": [],
   "Ext.ux.event.Player": [],
+  "Prototype.controller.SubMenu": [],
   "Ext.ux.Router": [],
   "ExtThemeNeptune.panel.Tool": [],
   "Prototype.view.Viewport": [],
