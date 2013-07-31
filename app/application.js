@@ -19,7 +19,7 @@ Ext.define('Prototype.Application', {
         'Ext.data.*',
         'Ext.grid.*',
         'Ext.ux.Router',
-        'Prototype.store.Items'
+        'Prototype.store.*'
     ],
 
     views: [
@@ -36,7 +36,7 @@ Ext.define('Prototype.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'Items'
     ],
 
     /*
