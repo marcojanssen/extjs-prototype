@@ -34,11 +34,11 @@ Ext.define('Prototype.controller.SubMenu', {
         var submenu = this.getSubMenu();
 
         if('Settings' === match.controller) {
-            submenu.add(this.getSettingsSubMenuItems());
+            submenu.add(this.getSettingsSubMenuItems(match.action));
         }
 
         if('Home' === match.controller) {
-            submenu.add(this.getHomeSubMenuItems());
+            submenu.add(this.getHomeSubMenuItems(match.action));
         }
 
         if(null !== submenu.child()) {
@@ -50,7 +50,7 @@ Ext.define('Prototype.controller.SubMenu', {
      * Get the items for settings
      * @returns {Array}
      */
-    getSettingsSubMenuItems: function() {
+    getSettingsSubMenuItems: function(action) {
         return [{
             text: 'Save'
         },{
@@ -62,10 +62,49 @@ Ext.define('Prototype.controller.SubMenu', {
      * Get the items for home
      * @returns {Array}
      */
-    getHomeSubMenuItems: function() {
-        return [{
-            text: 'New'
-        }];
+    getHomeSubMenuItems: function(action) {
+
+        if('index' === action) {
+            return [{
+                text: 'New',
+                handler: function() {
+                    Ext.Router.redirect('home/new');
+                }
+            }];
+        }
+
+        if('new' === action) {
+            return [{
+                text: 'Back',
+                handler: function() {
+                    Ext.Router.redirect('home');
+                }
+            },{
+                text: 'Save',
+                handler: function() {
+                    alert("Save");
+                }
+            }];
+        }
+
+        if('edit' === action) {
+            return [{
+                text: 'Back',
+                handler: function() {
+                    Ext.Router.redirect('home');
+                }
+            },{
+                text: 'Save',
+                handler: function() {
+                    alert("Save");
+                }
+            },{
+                text: 'Terminate',
+                handler: function() {
+                    alert("Terminate");
+                }
+            }];
+        }
     },
 
     /**

@@ -27,6 +27,7 @@ Ext.define('Prototype.Application', {
         'SubMenu',
         'home.Index',
         'home.Edit',
+        'home.New',
         'settings.Index'
     ],
 
@@ -47,6 +48,8 @@ Ext.define('Prototype.Application', {
      */
     routes: {
         '/'             : 'home#index',
+        'home'          : 'home#index',
+        'home/new'      : 'home#new',
         'home/edit/:id' : 'home#edit',
         'settings'      : 'settings#index',
         'users'         : 'users#list',

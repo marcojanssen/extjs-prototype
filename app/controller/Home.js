@@ -5,5 +5,8 @@ Ext.define('Prototype.controller.Home', {
     },
 
     edit: function() {
+    },
+
+    new: function() {
     }
 });
