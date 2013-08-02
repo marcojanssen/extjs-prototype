@@ -49,14 +49,14 @@ Ext.define('Prototype.view.home.Index', {
                     tooltip: 'Edit',
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = grid.getStore().getAt(rowIndex);
-                        alert("Edit " + rec.get('name'));
+                        Ext.Router.redirect('home/edit/'+rec.get('id'));
                     }
                 },{
                     icon: 'resources/img/glyphicons/glyphicons_027_search.png',
                     tooltip: 'Preview',
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = grid.getStore().getAt(rowIndex);
-                        alert("Terminate " + rec.get('name'));
+                        alert("Preview " + rec.get('name'));
                     }
                 },{
                     icon: 'resources/img/glyphicons/glyphicons_016_bin.png',
