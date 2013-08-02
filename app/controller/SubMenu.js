@@ -16,7 +16,7 @@ Ext.define('Prototype.controller.SubMenu', {
      * @param uri
      * @param match
      */
-    beforeDispatchSubMenu: function(uri, match) {
+    beforeDispatchSubMenu: function(uri, match, params) {
         var submenu = this.getSubMenu();
         submenu.removeAll();
 
