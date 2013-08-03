@@ -1,7 +1,8 @@
 Ext.define('Prototype.controller.Router', {
     extend: 'Ext.app.Controller',
 
-    previousMatch: '',
+    previousMatch: {},
+    currentMatch: {},
 
     init: function() {
         Ext.ux.Router.on('routemissed', this.routeMissed, this);
@@ -18,40 +19,71 @@ Ext.define('Prototype.controller.Router', {
     },
 
     dispatch: function(token, match, params, controller) {
-        var viewClass, action;
-
-        action      = Ext.String.capitalize(match.action);
-        controller  = match.controller.charAt(0).toLowerCase() + match.controller.substr(1);
-
         this.currentMatch = match;
 
-        // try to get the view by controller + action names
-        viewClass   = Ext.ClassManager.get('Prototype.view.' + controller + '.' + action);
-
-        if (viewClass) {
-            this.animate(viewClass);
-        }
+        this.animate();
 
         this.previousMatch = match;
     },
 
-    animate: function(viewClass) {
-        var viewport    = Ext.getCmp('viewport'),
-            target      = viewport.down('#viewport-target');
+    animate: function() {
 
-        target.getEl().slideOut('l', {
+        //if a previous action was defined
+        if(this.previousMatch.action) {
+
+            //switching main screens
+            if(this.previousMatch.controller !== this.currentMatch.controller) {
+                this.fade();
+                return;
+            }
+
+            //from main screen to sub screen
+            if('index' === this.previousMatch.action && 'index' !== this.currentMatch.action) {
+                this.slide('l', 'r');
+                return;
+            }
+
+            //from sub screen to main screen
+            if('index' !== this.previousMatch.action && 'index' === this.currentMatch.action) {
+                this.slide('r', 'l');
+                return;
+            }
+        }
+
+        //no previous action set, app is starting up so just display requested screen
+        if(undefined === this.previousMatch.action) {
+            this.display();
+            return;
+        }
+    },
+
+    display: function() {
+        var view = this.createViewClass(),
+            target = this.getTarget();
+
+        target.add(
+            Ext.create(view, {
+                border: false
+            })
+        );
+    },
+
+    slide: function(slideOutDirection, slideInDirection) {
+        var view = this.createViewClass(),
+            target = this.getTarget();
+
+        target.getEl().slideOut(slideOutDirection, {
             duration: 400,
             callback: function() {
                 target.removeAll();
 
-                // create view
-                view = Ext.create(viewClass, {
-                    border: false
-                });
+                target.add(
+                    Ext.create(view, {
+                        border: false
+                    })
+                );
 
-                target.add(view);
-
-                target.getEl().slideIn('r',{
+                target.getEl().slideIn(slideInDirection, {
                     duration: 400,
                     callback: function() {
                         target.doLayout();
@@ -61,6 +93,55 @@ Ext.define('Prototype.controller.Router', {
             },
             scope: this
         });
+    },
+
+    fade: function() {
+        var view = this.createViewClass(),
+            target = this.getTarget();
+
+        target.getEl().fadeOut({
+            duration: 400,
+            callback: function() {
+                target.removeAll();
+
+                target.add(
+                    Ext.create(view, {
+                        border: false
+                    })
+                );
+
+                target.getEl().fadeIn({
+                    duration: 400,
+                    callback: function() {
+                        target.doLayout();
+                    },
+                    scope: this
+                });
+            },
+            scope: this
+        });
+    },
+
+    createViewClass: function() {
+        var viewClass, action, controller;
+
+        action      = Ext.String.capitalize(this.currentMatch.action);
+        controller  = this.currentMatch.controller.charAt(0).toLowerCase() + this.currentMatch.controller.substr(1);
+
+        // try to get the view by controller + action names
+        viewClass   = Ext.ClassManager.get('Prototype.view.' + controller + '.' + action);
+
+        if (viewClass) {
+            return viewClass;
+        }
+    },
+
+    getTarget: function() {
+        var viewport    = Ext.getCmp('viewport'),
+            target      = viewport.down('#viewport-target');
+
+        return target;
     }
+
 
 });
