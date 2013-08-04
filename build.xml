@@ -40,33 +40,38 @@
     -->
 
     <target name="-after-build">
-        <echo>Removing ${build.dir}/.sass-cache</echo>
-        <delete dir="${build.dir}/.sass-cache" />
+        <if>
+            <equals arg1="${args.environment}" arg2="production" />
+            <then>
+                <echo>Removing ${build.dir}/.sass-cache</echo>
+                <delete dir="${build.dir}/.sass-cache" />
 
-        <echo>Removing all example css</echo>
-        <delete>
-            <fileset dir="${build.dir}" includes="**/*-example.css"/>
-        </delete>
+                <echo>Removing all example css</echo>
+                <delete>
+                    <fileset dir="${build.dir}" includes="**/*-example.css"/>
+                </delete>
 
-        <echo>Removing *.scss</echo>
-        <delete>
-            <fileset dir="${build.dir}" includes="**/*.scss"/>
-        </delete>
+                <echo>Removing *.scss</echo>
+                <delete>
+                    <fileset dir="${build.dir}" includes="**/*.scss"/>
+                </delete>
 
-        <echo>Removing theme capture</echo>
-        <delete>
-            <fileset dir="${build.dir}" includes="**/theme-capture.*"/>
-        </delete>
+                <echo>Removing theme capture</echo>
+                <delete>
+                    <fileset dir="${build.dir}" includes="**/theme-capture.*"/>
+                </delete>
 
-        <echo>Removing readme.md</echo>
-        <delete>
-            <fileset dir="${build.dir}" includes="**/Readme.md"/>
-        </delete>
+                <echo>Removing readme.md</echo>
+                <delete>
+                    <fileset dir="${build.dir}" includes="**/Readme.md"/>
+                </delete>
 
-        <echo>Removing config.rb</echo>
-        <delete>
-            <fileset dir="${build.dir}" includes="**/config.rb"/>
-        </delete>
+                <echo>Removing config.rb</echo>
+                <delete>
+                    <fileset dir="${build.dir}" includes="**/config.rb"/>
+                </delete>
+            </then>
+        </if>
     </target>
 
 </project>
