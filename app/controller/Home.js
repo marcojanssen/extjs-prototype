@@ -7,6 +7,6 @@ Ext.define('Prototype.controller.Home', {
     edit: function() {
     },
 
-    new: function() {
+    create: function() {
     }
 });

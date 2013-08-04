@@ -1,4 +1,4 @@
-Ext.define('Prototype.view.home.New', {
+Ext.define('Prototype.view.home.Create', {
     extend: 'Ext.form.Panel',
     requires: [
         'Ext.form.FieldSet',

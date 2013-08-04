@@ -73,7 +73,7 @@ Ext.define('Prototype.controller.SubMenu', {
             }];
         }
 
-        if('new' === action) {
+        if('create' === action) {
             return [{
                 text: 'Back',
                 handler: function() {
