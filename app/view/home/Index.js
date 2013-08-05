@@ -35,7 +35,7 @@ Ext.define('Prototype.view.home.Index', {
         title: 'Grid',
         stateful: true,
         stateId: 'home.Grid',
-        store: Ext.create('Prototype.store.Items'),
+        store: 'Items',
         ui: 'center-grid',
         columns: [
             { text: 'Name',  dataIndex: 'name' },
