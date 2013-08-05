@@ -45,3 +45,12 @@
 .#{$prefix}panel-center-grid .#{$prefix}column-header {
     border-right: 0px;
 }
+
+.#{$prefix}panel-center-grid .#{$prefix}grid-row-over {
+    cursor:pointer;
+}
+
+.#{$prefix}panel-center-grid .#{$prefix}grid-row-over .#{$prefix}grid-td {
+    background-color: transparent;
+    @include background-image(linear-gradient(#46A4CE, #2777BE, #2777BE));
+}
