@@ -11,9 +11,7 @@ Ext.define('Prototype.view.Viewport', {
         type: 'border'
     },
 
-    style: {
-        backgroundImage: 'url(resources/img/background.jpg)'
-    },
+    cls: 'viewport',
 
     items: [{
         region: 'north',
