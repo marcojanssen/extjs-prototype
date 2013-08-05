@@ -23,6 +23,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.grid.TransformGrid": [],
   "Ext.ux.ajax.DataSimlet": [],
   "Ext.ux.FieldReplicator": [],
+  "Prototype.controller.Router": [],
+  "Prototype.view.home.Edit": [],
   "Ext.ux.grid.filter.ListFilter": [],
   "ExtThemeNeptune.panel.Panel": [],
   "ExtThemeNeptune.toolbar.Paging": [],
@@ -102,6 +104,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.grid.FiltersFeature": [],
   "ExtThemeNeptune.picker.Month": [],
   "ExtThemeNeptune.grid.RowEditor": [],
+  "Prototype.view.home.Create": [],
   "ExtThemeNeptune.Component": [],
   "Ext.ux.data.PagingMemoryProxy": [
     "Ext.data.PagingMemoryProxy"
@@ -119,6 +122,8 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.grid.TransformGrid": [],
   "Ext.ux.ajax.DataSimlet": [],
   "Ext.ux.FieldReplicator": [],
+  "Prototype.controller.Router": [],
+  "Prototype.view.home.Edit": [],
   "Ext.ux.grid.filter.ListFilter": [
     "gridfilter.list"
   ],
@@ -246,6 +251,7 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "ExtThemeNeptune.picker.Month": [],
   "ExtThemeNeptune.grid.RowEditor": [],
+  "Prototype.view.home.Create": [],
   "ExtThemeNeptune.Component": [],
   "Ext.ux.data.PagingMemoryProxy": [
     "proxy.pagingmemory"
