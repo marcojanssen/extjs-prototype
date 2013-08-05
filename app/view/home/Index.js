@@ -45,22 +45,28 @@ Ext.define('Prototype.view.home.Index', {
                 xtype:'actioncolumn',
                 width: 100,
                 items: [{
-                    icon: 'resources/img/glyphicons/glyphicons_030_pencil.png',
+                    icon: null,
                     tooltip: 'Edit',
+                    iconCls: 'grid-button-edit',
+                    altText: 'Edit',
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = grid.getStore().getAt(rowIndex);
                         Ext.Router.redirect('home/edit/'+rec.get('id'));
                     }
                 },{
-                    icon: 'resources/img/glyphicons/glyphicons_027_search.png',
+                    icon: null,
                     tooltip: 'Preview',
+                    iconCls: 'grid-button-preview',
+                    altText: 'Preview',
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = grid.getStore().getAt(rowIndex);
                         alert("Preview " + rec.get('name'));
                     }
                 },{
-                    icon: 'resources/img/glyphicons/glyphicons_016_bin.png',
+                    icon: null,
                     tooltip: 'Delete',
+                    iconCls: 'grid-button-delete',
+                    altText: 'Delete',
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = grid.getStore().getAt(rowIndex);
                         alert("Terminate " + rec.get('name'));

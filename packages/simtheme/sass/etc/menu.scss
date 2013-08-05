@@ -1,0 +1,50 @@
+div.menu {
+  background-image: url('img/background-menu.png');
+}
+
+ul.menu {
+  list-style-type:none;
+  margin:0;
+  padding: 5px 0 0 0;
+}
+
+ul.menu li {
+  display:inline;
+}
+
+ul.menu li a {
+  width: 150px;
+  display: block;
+  float: left;
+  padding-left: 30px;
+  height: 35px;
+  color: #EDEDED;
+}
+
+ul.menu li a:hover {
+  color: #FFFFFF;
+}
+
+ul.menu li a:active {
+  color: #FFFFFF;
+}
+
+ul.menu li.page1 a {
+  background-image: url('img/glyphicons/glyphicons_307_life_preserver.png');
+  background-repeat: no-repeat;
+}
+
+ul.menu li.page2 a {
+  background-image: url('img/glyphicons/glyphicons_308_share_alt.png');
+  background-repeat: no-repeat;
+}
+
+ul.menu li.home a {
+  background-image: url('img/glyphicons/glyphicons_309_comments.png');
+  background-repeat: no-repeat;
+}
+
+ul.menu li.profile a {
+  background-image: url('img/glyphicons/glyphicons_319_sort.png');
+  background-repeat: no-repeat;
+}
