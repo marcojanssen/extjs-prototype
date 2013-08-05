@@ -27,7 +27,25 @@ Ext.define('Prototype.view.home.Index', {
         stateful: true,
         stateId: 'home.grid.Filter',
         collapsible: true,
-        ui: 'filter-panel'
+        ui: 'filter-panel',
+        layout: 'accordion',
+        items: [{
+            title: 'Sub 1',
+            html: 'Empty',
+            ui: 'filter-sub-panel'
+        }, {
+            title: 'Sub 2',
+            html: 'Empty',
+            ui: 'filter-sub-panel'
+        }, {
+            title: 'Sub 3',
+            html: 'Empty',
+            ui: 'filter-sub-panel'
+        }, {
+            title: 'Sub 4',
+            html: 'Empty',
+            ui: 'filter-sub-panel'
+        }]
 
     }, {
         region: 'center',
