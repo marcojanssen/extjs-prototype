@@ -34,6 +34,22 @@
   );
 }
 
+@if $include-panel-filter-panel-ui {
+  @include extjs-panel-ui(
+    $ui-label: 'filter-sub-panel',
+
+    $ui-header-font-size: 12px,
+    $ui-header-color: #FFFFFF,
+    $ui-header-background-color: #2777BE,
+
+    $ui-border-color: #000000,
+    $ui-border-radius: $panel-frame-border-radius,
+
+    $ui-body-background-color: #000000,
+    $ui-tool-background-image: 'tools/tool-sprites'
+  );
+}
+
 .#{$prefix}panel-filter-panel,
 .#{$prefix}panel-center-grid {
     margin: 30px;
