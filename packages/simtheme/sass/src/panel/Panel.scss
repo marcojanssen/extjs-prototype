@@ -5,15 +5,16 @@
     $ui-label: 'center-grid',
 
     $ui-header-font-family: $font-family,
-    $ui-header-font-size: $panel-sim-header-font-size,
-    $ui-header-font-weight: $panel-sim-header-font-weight,
-    $ui-header-color: $sim-header-color,
-    $ui-header-background-color: $base-color,
+    $ui-header-font-size: 30px,
+    $ui-header-font-weight: bold,
+    $ui-header-color: #2777BE,
+    $ui-header-background-color: #FFFFFF,
+    $ui-header-line-height: 50px,
 
     $ui-border-radius: $panel-frame-border-radius,
 
-    $ui-body-background-color: $base-color,
-    $ui-tool-background-image: $panel-sim-tool-background-image
+    $ui-body-background-color: #FFFFFF,
+    $ui-tool-background-image: 'tools/tool-sprites'
   );
 }
 
@@ -21,9 +22,7 @@
   @include extjs-panel-ui(
     $ui-label: 'filter-panel',
 
-    $ui-header-font-family: $font-family,
-    $ui-header-font-size: $panel-sim-header-font-size,
-    $ui-header-font-weight: $panel-sim-header-font-weight,
+    $ui-header-font-size: 0px,
     $ui-header-color: #FFFFFF,
     $ui-header-background-color: #000000,
 
@@ -31,7 +30,7 @@
     $ui-border-radius: $panel-frame-border-radius,
 
     $ui-body-background-color: #000000,
-    $ui-tool-background-image: $panel-sim-tool-background-image
+    $ui-tool-background-image: 'tools/tool-sprites'
   );
 }
 
@@ -41,4 +40,8 @@
     /*-webkit-box-shadow: 0px 0px 15px #000000;
     -moz-box-shadow: 0px 0px 15px #000000;
     box-shadow: 0px 0px 15px #000000;*/
+}
+
+.#{$prefix}panel-center-grid .#{$prefix}column-header {
+    border-right: 0px;
 }

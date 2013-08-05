@@ -1,14 +1,10 @@
-$panel-sim-header-font-size: 13px !default;
-$panel-sim-header-font-weight: bold !default;
-$panel-sim-header-background-color: white !default;
-$panel-sim-header-border-width: 1px !default;
-$panel-sim-header-color: #2777BE !default;
+$grid-row-cell-alt-background-color: #FFFFFF !default;
+$grid-row-cell-over-background-color: #2777BE !default;
+$grid-row-cell-over-color: #FFFFFF !default;
 
-$panel-sim-body-border-color: #d8d9d9 !default;
-
-$panel-sim-border-width: 1px !default;
-
-$panel-sim-tool-background-image: 'tools/tool-sprites' !default;
+$grid-column-header-color: #2777BE !default;
+$grid-header-background-color: #FFFFFF !default;
+$grid-header-border-width: 2px !default;
 
 $include-panel-center-grid-ui: true !default;
 $include-panel-filter-panel-ui: true !default;
