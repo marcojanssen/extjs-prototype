@@ -404,20 +404,17 @@ this file in most cases.
             <then>
                 <for list="${theme.base.packages}" param="base">
                     <sequential>
-                        <echo>Merging resources from base package @{base}</echo>
-                        <local name="base.path"/>
-                        <local name="base.resource.path"/>
-                        <property name="base.path" location="@{base}"/>
-                        <property name="base.resource.path" location="${base.path}/resources"/>
-                        
+                        <local name="package-name"/>
+                        <basename property="package-name" file="@{base}"/>
+                        <echo>Merging base package resources for ${package-name} from @{base}/resources</echo>
+
                         <if>
-                            <available file="${base.resource.path}" type="dir" />
+                            <available file="@{base}/resources" type="dir" />
                             <then>
                                 <copy todir="${build.resources.dir}" overwrite="true">
-                                    <fileset 
-                                        dir="${base.resource.path}" 
-                                        includes="**/*"
-                                        excludes="@{base}-all*.css"/>
+                                    <fileset dir="@{base}/resources"
+                                             includes="**/*"
+                                             excludes="@{base}-all*.css"/>
                                 </copy>
                             </then>
                         </if>
@@ -431,20 +428,17 @@ this file in most cases.
             <then>
                 <for list="${app.requires.packages}" param="base">
                     <sequential>
-                        <echo>Copying resources from required package @{base}</echo>
-                        <local name="base.path"/>
-                        <local name="base.resource.path"/>
-                        <property name="base.path" location="@{base}"/>
-                        <property name="base.resource.path" location="${base.path}/resources"/>
-                        
+                        <local name="package-name"/>
+                        <basename property="package-name" file="@{base}"/>
+                        <echo>Copying required package resources for ${package-name} from @{base}/resources</echo>
+
                         <if>
-                            <available file="${base.resource.path}" type="dir" />
+                            <available file="@{base}/resources" type="dir" />
                             <then>
-                                <copy todir="${build.resources.dir}/@{base}" overwrite="true">
-                                    <fileset 
-                                        dir="${base.resource.path}" 
-                                        includes="**/*"
-                                        excludes="@{base}-all*.css"/>
+                                <copy todir="${build.resources.dir}/${package-name}">
+                                    <fileset dir="@{base}/resources"
+                                             includes="**/*"
+                                             excludes="@{base}-all*.css"/>
                                 </copy>
                             </then>
                         </if>
@@ -455,7 +449,7 @@ this file in most cases.
 
         <antcall target="-after-inherit-resources"/>
     </target>
-    
+
     <!--
     Slice
     -->
