@@ -52,9 +52,19 @@ Ext.define('Prototype.controller.SubMenu', {
      */
     getSettingsSubMenuItems: function(action) {
         return [{
-            text: 'Save'
+            text: 'Save',
+            cls: 'x-btn-button-green',
+            overCls: 'button-green-over',
+            pressedCls: 'button-green-pressed',
+            xtype: 'button',
+            iconCls: 'time',
+            scale: 'small',
+            width: 80
         },{
-            text: 'Terminate'
+            text: 'Terminate',
+            cls: 'x-btn-button-blue',
+            overCls: 'button-blue-over',
+            pressedCls: 'button-blue-pressed'
         }];
     },
 
@@ -67,6 +77,9 @@ Ext.define('Prototype.controller.SubMenu', {
         if('index' === action) {
             return [{
                 text: 'New',
+                cls: 'x-btn-button-green',
+                overCls: 'button-green-over',
+                pressedCls: 'button-green-pressed',
                 handler: function() {
                     Ext.Router.redirect('home/new');
                 }
@@ -76,11 +89,17 @@ Ext.define('Prototype.controller.SubMenu', {
         if('create' === action) {
             return [{
                 text: 'Back',
+                cls: 'x-btn-button-black',
+                overCls: 'button-black-over',
+                pressedCls: 'button-black-pressed',
                 handler: function() {
                     Ext.Router.redirect('home');
                 }
             },{
                 text: 'Save',
+                cls: 'x-btn-button-green',
+                overCls: 'button-green-over',
+                pressedCls: 'button-green-pressed',
                 handler: function() {
                     alert("Save");
                 }
@@ -90,16 +109,25 @@ Ext.define('Prototype.controller.SubMenu', {
         if('edit' === action) {
             return [{
                 text: 'Back',
+                cls: 'x-btn-button-black',
+                overCls: 'button-black-over',
+                pressedCls: 'button-black-pressed',
                 handler: function() {
                     Ext.Router.redirect('home');
                 }
             },{
                 text: 'Save',
+                cls: 'x-btn-button-green',
+                overCls: 'button-green-over',
+                pressedCls: 'button-green-pressed',
                 handler: function() {
                     alert("Save");
                 }
             },{
                 text: 'Terminate',
+                cls: 'x-btn-button-blue',
+                overCls: 'button-blue-over',
+                pressedCls: 'button-blue-pressed',
                 handler: function() {
                     alert("Terminate");
                 }

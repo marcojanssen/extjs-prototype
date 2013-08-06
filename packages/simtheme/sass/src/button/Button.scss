@@ -1,0 +1,151 @@
+@include extjs-button-ui(
+    $ui: 'button-blue',
+
+    $border-radius: 4px,
+
+    $background-color: #2777BE,
+    $background-color-over: lighten(#2777BE, 2%),
+    $background-color-focus: #2777BE,
+    $background-color-pressed: darken(#2777BE, 2%),
+    $background-color-disabled: darken(#2777BE, 10%),
+
+    $font-family: $font-family,
+    $font-family-over: $font-family,
+    $font-family-focus: $font-family,
+    $font-family-pressed: $font-family,
+    $font-family-disabled: $font-family,
+
+    $border-width: 1px,
+    $border-color: #484851,
+    $border-color-over: #484851,
+    $border-color-focus: #484851,
+    $border-color-pressed: #484851,
+    $border-color-disabled: #484851,
+
+    $color: #FFFFFF,
+
+    $background-gradient: 'glossy-button',
+    $background-gradient-over: 'glossy-button-over',
+    $background-gradient-pressed: 'glossy-button-pressed',
+    $background-gradient-focus: 'glossy-button-pressed',
+    $background-gradient-disabled: 'glossy-button-pressed',
+
+    $glyph-color: #FFFFFF,
+    $include-ui-menu-arrows: false,
+    $include-ui-split-arrows: false,
+    $include-split-over-arrows: false
+);
+
+@include extjs-button-ui(
+  $ui: 'button-green',
+
+  $border-radius: 4px,
+
+  $background-color: #95AD19,
+  $background-color-over: lighten(#95AD19, 2%),
+  $background-color-focus: #95AD19,
+  $background-color-pressed: darken(#95AD19, 2%),
+  $background-color-disabled: darken(#95AD19, 10%),
+
+  $font-family: $font-family,
+  $font-family-over: $font-family,
+  $font-family-focus: $font-family,
+  $font-family-pressed: $font-family,
+  $font-family-disabled: $font-family,
+
+  $border-width: 1px,
+  $border-color: #484851,
+  $border-color-over: #484851,
+  $border-color-focus: #484851,
+  $border-color-pressed: #484851,
+  $border-color-disabled: #484851,
+
+  $color: #FFFFFF,
+
+  $background-gradient: 'glossy-button',
+  $background-gradient-over: 'glossy-button-over',
+  $background-gradient-pressed: 'glossy-button-pressed',
+  $background-gradient-focus: 'glossy-button-pressed',
+  $background-gradient-disabled: 'glossy-button-pressed',
+
+  $glyph-color: #FFFFFF,
+  $include-ui-menu-arrows: false,
+  $include-ui-split-arrows: false,
+  $include-split-over-arrows: false
+);
+
+@include extjs-button-ui(
+  $ui: 'button-black',
+
+  $border-radius: 4px,
+
+  $background-color: #484851,
+  $background-color-over: lighten(#484851, 2%),
+  $background-color-focus: #484851,
+  $background-color-pressed: darken(#484851, 2%),
+  $background-color-disabled: darken(#484851, 10%),
+
+  $font-family: $font-family,
+  $font-family-over: $font-family,
+  $font-family-focus: $font-family,
+  $font-family-pressed: $font-family,
+  $font-family-disabled: $font-family,
+
+  $border-width: 1px,
+  $border-color: #484851,
+  $border-color-over: #484851,
+  $border-color-focus: #484851,
+  $border-color-pressed: #484851,
+  $border-color-disabled: #484851,
+
+  $color: #FFFFFF,
+
+  $background-gradient: 'glossy-button',
+  $background-gradient-over: 'glossy-button-over',
+  $background-gradient-pressed: 'glossy-button-pressed',
+  $background-gradient-focus: 'glossy-button-pressed',
+  $background-gradient-disabled: 'glossy-button-pressed',
+
+  $glyph-color: #FFFFFF,
+  $include-ui-menu-arrows: false,
+  $include-ui-split-arrows: false,
+  $include-split-over-arrows: false
+);
+
+@include extjs-button-ui(
+  $ui: 'button-orange',
+
+  $border-radius: 4px,
+
+  $background-color: #EA922B,
+  $background-color-over: lighten(#EA922B, 2%),
+  $background-color-focus: #EA922B,
+  $background-color-pressed: darken(#EA922B, 2%),
+  $background-color-disabled: darken(#EA922B, 10%),
+
+  $font-family: $font-family,
+  $font-family-over: $font-family,
+  $font-family-focus: $font-family,
+  $font-family-pressed: $font-family,
+  $font-family-disabled: $font-family,
+
+  $border-width: 1px,
+  $border-color: #484851,
+  $border-color-over: #484851,
+  $border-color-focus: #484851,
+  $border-color-pressed: #484851,
+  $border-color-disabled: #484851,
+
+  $color: #FFFFFF,
+
+  $background-gradient: 'glossy-button',
+  $background-gradient-over: 'glossy-button-over',
+  $background-gradient-pressed: 'glossy-button-pressed',
+  $background-gradient-focus: 'glossy-button-pressed',
+  $background-gradient-disabled: 'glossy-button-pressed',
+
+  $glyph-color: #FFFFFF,
+  $include-ui-menu-arrows: false,
+  $include-ui-split-arrows: false,
+  $include-split-over-arrows: false
+);
