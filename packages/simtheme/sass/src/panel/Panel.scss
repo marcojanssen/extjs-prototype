@@ -1,7 +1,4 @@
-@import "compass/css3/box-shadow";
-
-@if $include-panel-center-grid-ui {
-  @include extjs-panel-ui(
+@include extjs-panel-ui(
     $ui-label: 'center-grid',
 
     $ui-header-font-family: $font-family,
@@ -15,11 +12,9 @@
 
     $ui-body-background-color: #FFFFFF,
     $ui-tool-background-image: 'tools/tool-sprites'
-  );
-}
+);
 
-@if $include-panel-filter-panel-ui {
-  @include extjs-panel-ui(
+@include extjs-panel-ui(
     $ui-label: 'filter-panel',
 
     $ui-header-font-size: 0px,
@@ -31,11 +26,9 @@
 
     $ui-body-background-color: #000000,
     $ui-tool-background-image: 'tools/tool-sprites'
-  );
-}
+);
 
-@if $include-panel-filter-panel-ui {
-  @include extjs-panel-ui(
+@include extjs-panel-ui(
     $ui-label: 'filter-sub-panel',
 
     $ui-header-font-size: 12px,
@@ -47,8 +40,7 @@
 
     $ui-body-background-color: #000000,
     $ui-tool-background-image: 'tools/tool-sprites'
-  );
-}
+);
 
 .#{$prefix}panel-filter-panel,
 .#{$prefix}panel-center-grid {
